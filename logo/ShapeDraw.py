@@ -1,4 +1,7 @@
-
+import numpy
+from tealight.logo import (move, 
+                           turn, 
+                           color)
 import numpy
 
 print "Welcome to ShapeDraw 1.0"
