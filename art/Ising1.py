@@ -43,5 +43,6 @@ def draw_lattice(s):
 #Main
 
 s = Lattice(9, 0.5)
+print s.Array
 draw_lattice(s)
 
