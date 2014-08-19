@@ -19,7 +19,7 @@ class Lattice:
 #Create a square matrix
 def create_matrix(size, default_value=0):
   Matrix = [[0 for x in xrange(size)] for x in xrange(size)]
-  q = random(0,1000)
+  q = random()
   print q
   for i in range(0, size):
     for j in range(0, size):
