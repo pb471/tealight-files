@@ -12,7 +12,7 @@ def waterwheel(edges, size):
   for i in range(0, edges):
     move(size)
     #square(decoration)
-    circle(3)
+    circle(200)
     turn(angle)
 
 def circle(side):
