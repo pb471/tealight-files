@@ -8,6 +8,10 @@ class Lattice:
   #Constructor
   def __init__(self, side_length):
     self.Array = create_matrix(side_length)
+    self.side_length = side_length
+    self.N = side_length*side_length
+    
+  def 
 
 #Function definitions
 def create_matrix(size, default_value=0):
@@ -16,7 +20,10 @@ def create_matrix(size, default_value=0):
     for j in range(0, size):
       Matrix[i][j] = default_value
   return Matrix
+
+def draw_lattice(s):
+  
      
 s = Lattice(5)
-print s.Array[4][4]
+print s.N
 
