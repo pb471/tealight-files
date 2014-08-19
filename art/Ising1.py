@@ -18,5 +18,5 @@ def create_matrix(size, default_value=0):
   return Matrix
      
 s = Lattice(5)
-print s.Array[1][1]
+print s.Array[5][1]
 
