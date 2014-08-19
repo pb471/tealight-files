@@ -5,7 +5,7 @@ from tealight.net import connect, send
 lastx = 0
 lasty = 0
 
-color("blue")
+color("red")
 connect("shared_whiteboard")
 
 def handle_mousedown(x,y):
