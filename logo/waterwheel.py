@@ -23,4 +23,4 @@ def circle(side):
     turn(angle)
     
 turn(-90)
-waterwheel(12,100)
+waterwheel(12,2)
