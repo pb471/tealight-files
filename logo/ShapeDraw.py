@@ -16,4 +16,4 @@ def PolygonDraw(Colour, Size, Sides):
     move(Size)
     turn( 360.0 / Sides)
     
-Draw("Square", "red", 120)
+Draw("Triangle", "red", 120)
