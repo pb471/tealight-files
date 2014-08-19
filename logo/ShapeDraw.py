@@ -20,5 +20,6 @@ def PolygonDraw(Colour, Size, Sides):
 Draw("Triangle", "red", 120)
 
 x = [[],[],[],[]]
-x[1][2] = 1
+x[1].append(1)
+x[1].append(1)
 print x[1][2]
