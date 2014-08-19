@@ -7,7 +7,7 @@ def Draw(Name, Colour, Size):
     
 def PolygonDraw(Colour, Size, Sides):
   color(Colour)
-  for i in range(1, Sides)
+  for i in range(1, Sides):
     move(Size)
     turn( 360.0 / Sides)
     
