@@ -10,6 +10,7 @@ def create_matrix(i_max, j_max, DefaultValue=0):
   for i in range(0, i_max):
     for j in range(0, j_max):
       Matrix[i][j] = DefaultValue
+  return Matrix
      
 Mat1 = create_matrix(4,4)
 print Mat1[1][1]
