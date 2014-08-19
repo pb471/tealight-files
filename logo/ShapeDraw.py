@@ -1,6 +1,8 @@
 from tealight.logo import (move, 
                            turn, 
                            color)
+import numpy
+
 print "Welcome to ShapeDraw 1.0"
 
 def Draw(Name, Colour, Size):
@@ -17,3 +19,4 @@ def PolygonDraw(Colour, Size, Sides):
     turn( 360.0 / Sides)
     
 Draw("Triangle", "red", 120)
+numpy.zeros(5,5)
