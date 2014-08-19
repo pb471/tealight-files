@@ -19,7 +19,8 @@ for j in range(0,4):
       move()
       move()
       move()
-    else smell() 
+      turn(1)
+    else smell() >2 
       move()
     
 
