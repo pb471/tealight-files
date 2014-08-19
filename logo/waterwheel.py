@@ -18,7 +18,7 @@ def waterwheel(edges, size):
 def circle(side):
   N = 100
   angle = 360.0/N
-  for i in range(0, N)
+  for i in range(0, N):
     move(side)
     turn(angle)
     
