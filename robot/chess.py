@@ -16,7 +16,7 @@ for j in range(0,20):
     if touch() == "wall":
       turn(1)
       move()
-      turn(2) 
+      turn() 
       
       
    
