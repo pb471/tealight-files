@@ -6,7 +6,7 @@ print "Welcome to ShapeDraw 1.0"
 def Draw(Name, Colour, Size):
   if Name == "Square":
     PolygonDraw(Colour, Size, 4)
-  elif Name == "Triangle"
+  elif Name == "Triangle":
     PolygonDraw(Colour, Size, 3)
 
     
