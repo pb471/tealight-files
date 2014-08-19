@@ -19,8 +19,13 @@ def create_matrix(size, default_value=0):
     for j in range(0, size):
       Matrix[i][j] = default_value
   return Matrix
+
+def draw_lattice(s):
+  for i in range(0, s.side_length):
+    box(i+5, 5, 4, 4)
   
      
 s = Lattice(9)
 print s.N
+draw_lattice(s)
 
