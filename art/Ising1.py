@@ -57,5 +57,6 @@ def draw_lattice(s):
 
 s = Lattice(9, 0.2)
 m = s.Magnetisation()
+print m
 draw_lattice(s)
 
