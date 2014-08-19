@@ -9,6 +9,8 @@ ay = 0
 
 power = 0.1
 
+text(10,10,"Rachel")
+
 def handle_keydown(key):
   global ax, ay
   
