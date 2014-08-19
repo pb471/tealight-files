@@ -46,6 +46,6 @@ def draw_lattice(s):
 #####################
 #Main
 
-s = Lattice(9, 0)
+s = Lattice(9, 0.2)
 draw_lattice(s)
 
