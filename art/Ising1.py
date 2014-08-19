@@ -3,6 +3,11 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 from tealight.art import (screen_width, screen_height)
 
 #Classdefs
+class Lattice:
+  
+  #Constructor
+  def __init__(self, side_length):
+    self.Array = create_matrix(side_length)
 
 #Function definitions
 def create_matrix(size, default_value=0):
@@ -12,6 +17,6 @@ def create_matrix(size, default_value=0):
       Matrix[i][j] = default_value
   return Matrix
      
-Mat1 = create_matrix(3,)
-print Mat1[2][0]
+s = Lattice(5)
+print s.Array[1][1]
 
