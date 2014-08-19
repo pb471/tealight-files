@@ -56,7 +56,7 @@ def draw_lattice(s):
 #Main
 
 s = Lattice(9, 0.1)
-mag_string = str(s.Magnetisation)
+mag_string = s.Magnetisation()
 text(800,800, mag_string)
 draw_lattice(s)
 
