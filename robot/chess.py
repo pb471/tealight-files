@@ -27,7 +27,7 @@ for j in range(0,4):
   turn(1)
   
   for j in range(0,4):
-  for i in range(0,50):
+  for i in range(0,45):
     if touch() == "wall":
       turn(2)
     else:
