@@ -21,12 +21,7 @@ for j in range(0,2):
       move()
       turn(1)
     
-turn(3)
-move()
-move()
-move()
-move()
-turn(3)
+
     
 
 
