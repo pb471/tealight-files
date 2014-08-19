@@ -18,6 +18,7 @@ class Lattice:
     for i in range(0, self.side_length):
       for j in range(0, self.side_length):
         M = M + self.Array[i][j]
+    M = M/s.N
     return M
         
 
@@ -56,6 +57,5 @@ def draw_lattice(s):
 
 s = Lattice(9, 0.2)
 m = s.Magnetisation()
-print m
 draw_lattice(s)
 
