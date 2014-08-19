@@ -11,5 +11,6 @@ def create_matrix(i_max, j_max, DefaultValue=0):
     for j in range(0, j_max):
       Matrix[i][j] = DefaultValue
      
-
+Mat1 = create_matrix(4,4)
+print Mat1[1][1]
 
