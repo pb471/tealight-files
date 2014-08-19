@@ -19,6 +19,5 @@ def PolygonDraw(Colour, Size, Sides):
     
 Draw("Triangle", "red", 120)
 
-x = [[],[],[],[],[],[],[],[],[]]
-x[1,1] = 3
-print x[1,2]
+Matrix = [[0 for x in xrange(5)] for x in xrange(5)] 
+print Matrix[1][2]
