@@ -16,6 +16,5 @@ for j in range(0,4):
       turn(1)
     else:
        move()
-    end
   turn(1)
   
