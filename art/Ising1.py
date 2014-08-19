@@ -20,7 +20,7 @@ class Lattice:
 def create_matrix(size, default_value=0):
   Matrix = [[0 for x in xrange(size)] for x in xrange(size)]
   q = random()
-  print q.random()
+  print q
   for i in range(0, size):
     for j in range(0, size):
       Matrix[i][j] = default_value
