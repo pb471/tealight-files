@@ -51,11 +51,19 @@ def draw_lattice(s):
           j*SquareSize[1] +  InitialOffset[1], 
           SquareSize[0]-1, 
           SquareSize[0]-1)
+      
+#Neatly print magnetisation
+def PrintMagnetisation(s)
+  MagValue = s.Magnetisation() * 100.0
+  RoundedValue = int(MagValue / 100.0)
+  text(600,600, RoundedValue)
+
   
 #####################
 #Main
 
 s = Lattice(9, 0.1)
+PrintMagnetisation(s)
 mag_string = s.Magnetisation()
 text(600,600, mag_string)
 draw_lattice(s)
