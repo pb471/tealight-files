@@ -24,7 +24,7 @@ def draw_lattice(s):
   InitialOffset = [30,30]
   for i in range(0, s.side_length):
     for j in range(0, s.side_length):
-      box(i*30 + InitialOffset[1], j*30 +  InitialOffset[2], 20, 20)
+      box(i*30 + InitialOffset[0], j*30 +  InitialOffset[1], 20, 20)
   
      
 s = Lattice(9)
