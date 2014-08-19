@@ -12,6 +12,14 @@ class Lattice:
     self.Array = create_Ising_matrix(side_length, magnetisation)
     self.side_length = side_length
     self.N = side_length*side_length
+    
+  def Magnetisation(self)
+    M = 0
+    for i in range(0, self.side_length)
+      for j in range(0, self.side_length)
+        M = M + self.Array[i][j]
+    return M
+        
 
 ################
 #Function definitions
@@ -47,5 +55,6 @@ def draw_lattice(s):
 #Main
 
 s = Lattice(9, 0.2)
+print s.Magnetisation
 draw_lattice(s)
 
