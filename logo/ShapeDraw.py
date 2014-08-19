@@ -7,7 +7,8 @@ def Draw(Name, Colour, Size):
     DrawTriangle(COlour, Size)
     
 def DrawSquare(Colour, Size):
-  for 
+  for i in range(0,3)
+    
   
 
   
