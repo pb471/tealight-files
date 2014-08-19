@@ -9,7 +9,7 @@ class Lattice:
   
   #Constructor
   def __init__(self, side_length):
-    self.Array = create_matrix(side_length)
+    self.Array = create_Ising_matrix(side_length, magnetisation)
     self.side_length = side_length
     self.N = side_length*side_length
 
@@ -17,13 +17,15 @@ class Lattice:
 #Function definitions
 
 #Create a square matrix
-def create_matrix(size, default_value=0):
+def create_Ising_matrix(size, magnetisation):
   Matrix = [[0 for x in xrange(size)] for x in xrange(size)]
   for i in range(0, size):
     for j in range(0, size):
       q = random()
-      print q
-      Matrix[i][j] = default_value
+      if(q < magnetisation)
+        Matrix[i][j] = 1
+      else
+        Matrix[i][j] = -1
   return Matrix
 
 #Draw the array of a lattice object
