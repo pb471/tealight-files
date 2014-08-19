@@ -56,8 +56,7 @@ def draw_lattice(s):
 def PrintMagnetisation(s):
   MagValue = s.Magnetisation() * 100.0
   print "Magnetisation: %.2f " % MagValue
-  RoundedValue = int(MagValue / 100.0)
-  text(600,600, RoundedValue)
+  text(600,600, MagValue)
 
   
 #####################
