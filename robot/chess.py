@@ -11,7 +11,7 @@ from tealight.robot import (move,
 
 
 for j in range(0,2):
-  for i in range(0,50):
+  for i in range(0,40):
     move()
     if touch() == "wall":
       turn(1)
