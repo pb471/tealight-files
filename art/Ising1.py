@@ -12,6 +12,6 @@ def create_matrix(size, default_value=0):
       Matrix[i][j] = default_value
   return Matrix
      
-Mat1 = create_matrix(3,7)
+Mat1 = create_matrix(3,-2.1)
 print Mat1[2][0]
 
