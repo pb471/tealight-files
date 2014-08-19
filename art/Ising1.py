@@ -5,13 +5,13 @@ from tealight.art import (screen_width, screen_height)
 #Classdefs
 
 #Function definitions
-def create_matrix(i_max, j_max, DefaultValue=0):
-  Matrix = [[0 for x in xrange(i_max)] for x in xrange(j_max)]
-  for i in range(0, i_max):
-    for j in range(0, j_max):
+def create_matrix(size, default_value=0):
+  Matrix = [[0 for x in xrange(size)] for x in xrange(size)]
+  for i in range(0, size):
+    for j in range(0, size):
       Matrix[i][j] = DefaultValue
   return Matrix
      
-Mat1 = create_matrix(3,3,7)
+Mat1 = create_matrix(3,7)
 print Mat1[2][0]
 
