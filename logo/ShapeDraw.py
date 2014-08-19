@@ -6,10 +6,9 @@ def Draw(Name, Colour, Size):
   elif Name == "Triangle"
     DrawTriangle(COlour, Size)
     
-def DrawSquare(Colour, Size):
-  for i in range(0,3)
-    move(Size)
-    turn
+def PolygonDraw(Colour, Size, Sides)
+  color(Colour)
+  for i in range(
   
 
   
