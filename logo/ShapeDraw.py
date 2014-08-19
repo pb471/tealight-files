@@ -1,7 +1,7 @@
 print "Welcome to ShapeDraw 1.0"
 
 def Draw(Name, Colour, Size):
-  if Name == "Square"
+  if Name == "Square":
     DrawSquare(Colour, Size)
   elif Name == "Triangle"
     DrawTriangle(COlour, Size)
@@ -13,6 +13,3 @@ def PolygonDraw(Colour, Size, Sides)
     turn( 360.0 / Sides)
     
 Draw("Square", "red", 3)
-  
-
-  
