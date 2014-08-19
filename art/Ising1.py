@@ -15,7 +15,7 @@ class Lattice:
     
   def Magnetisation(self):
     M = 0
-    for i in range(0, self.side_length)
+    for i in range(0, self.side_length):
       for j in range(0, self.side_length)
         M = M + self.Array[i][j]
     return M
