@@ -34,6 +34,10 @@ def draw_lattice(s):
   SquareSize = [40,40]
   for i in range(0, s.side_length):
     for j in range(0, s.side_length):
+      if(s.Array[i][j] == 1):
+        color("red")
+      else:
+        color("blue")
       box(i*SquareSize[0] + InitialOffset[0], 
           j*SquareSize[1] +  InitialOffset[1], 
           SquareSize[0]-1, 
@@ -43,6 +47,5 @@ def draw_lattice(s):
 #Main
 
 s = Lattice(9, 0.5)
-print s.Array
 draw_lattice(s)
 
