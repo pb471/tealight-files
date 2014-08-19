@@ -9,7 +9,7 @@ def create_matrix(size, default_value=0):
   Matrix = [[0 for x in xrange(size)] for x in xrange(size)]
   for i in range(0, size):
     for j in range(0, size):
-      Matrix[i][j] = DefaultValue
+      Matrix[i][j] = default_value
   return Matrix
      
 Mat1 = create_matrix(3,7)
