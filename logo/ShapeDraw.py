@@ -8,7 +8,8 @@ def Draw(Name, Colour, Size):
     
 def DrawSquare(Colour, Size):
   for i in range(0,3)
-    
+    move(Size)
+    turn
   
 
   
