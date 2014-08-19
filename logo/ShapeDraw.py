@@ -20,5 +20,5 @@ def PolygonDraw(Colour, Size, Sides):
 Draw("Triangle", "red", 120)
 
 x = [[],[],[],[],[],[],[],[],[]]
-x[1][2] = 3
-print x[1][2]
+x[1,1] = 3
+print x[1,2]
