@@ -9,3 +9,4 @@ from tealight.robot import (move,
 # Add your code here
 
 for i in range(0,10):
+  move()
