@@ -1,5 +1,6 @@
-import tealight.logo
-
+from tealight.logo import (move, 
+                           turn, 
+                           color)
 print "Welcome to ShapeDraw 1.0"
 
 def Draw(Name, Colour, Size):
