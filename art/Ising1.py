@@ -53,7 +53,7 @@ def draw_lattice(s):
           SquareSize[0]-1)
       
 #Neatly print magnetisation
-def PrintMagnetisation(s)
+def PrintMagnetisation(s):
   MagValue = s.Magnetisation() * 100.0
   RoundedValue = int(MagValue / 100.0)
   text(600,600, RoundedValue)
