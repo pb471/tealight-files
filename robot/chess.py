@@ -16,16 +16,9 @@ for j in range(0,2):
     if touch() == "wall":
       turn(1)
       move()
-      move()
-      move()
-      move()
-      turn(3)   
-      move()
-      move()
-      move()
-      move()
-      turn(3)
-    
+      turn(1)   
+      
+   
 
     
 
