@@ -62,7 +62,7 @@ def PrintMagnetisation(s):
 #####################
 #Main
 
-s = Lattice(9, 0.1)
+s = Lattice(9, 0.5)
 PrintMagnetisation(s)
 mag_string = s.Magnetisation()
 draw_lattice(s)
