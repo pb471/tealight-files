@@ -57,6 +57,5 @@ def draw_lattice(s):
 
 s = Lattice(9, 0.1)
 text(800,800, s.Magnetisation)
-print m
 draw_lattice(s)
 
