@@ -13,8 +13,10 @@ from tealight.robot import (move,
 for j in range(0,4):
   for i in range(0,50):
     if touch() == "wall":
-      turn(2)
+      turn(1)
     else:
        move()
+        move()
+        move()
   turn(1)
   
