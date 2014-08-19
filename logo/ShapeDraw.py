@@ -5,7 +5,7 @@ def Draw(Name, Colour, Size):
     DrawSquare(Colour, Size)
 
     
-def PolygonDraw(Colour, Size, Sides)
+def PolygonDraw(Colour, Size, Sides):
   color(Colour)
   for i in range(1, Sides)
     move(Size)
