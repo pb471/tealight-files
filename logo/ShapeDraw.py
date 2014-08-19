@@ -8,7 +8,9 @@ def Draw(Name, Colour, Size):
     
 def PolygonDraw(Colour, Size, Sides)
   color(Colour)
-  for i in range(
+  for i in range(1, Sides)
+    move(Size)
+    turn(
   
 
   
