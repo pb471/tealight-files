@@ -22,9 +22,7 @@ def create_matrix(size, default_value=0):
 
 def draw_lattice(s):
   for i in range(0, s.side_length):
-    print s.side_length
-    print i
-    box(i+30, 30, 20, 20)
+    box(i*30, 30, 20, 20)
   
      
 s = Lattice(9)
