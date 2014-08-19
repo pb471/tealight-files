@@ -10,8 +10,7 @@ class Lattice:
     self.Array = create_matrix(side_length)
     self.side_length = side_length
     self.N = side_length*side_length
-    
-  def 
+
 
 #Function definitions
 def create_matrix(size, default_value=0):
