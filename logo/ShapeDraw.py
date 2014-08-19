@@ -1,4 +1,4 @@
-
+import tealight.logo
 
 print "Welcome to ShapeDraw 1.0"
 
