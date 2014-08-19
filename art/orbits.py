@@ -9,6 +9,7 @@ ay = 0
 
 power = 0.1
 
+color("pink")
 text(10,10,"Rachel")
 
 def handle_keydown(key):
