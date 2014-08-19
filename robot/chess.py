@@ -15,4 +15,4 @@ for j in range(0,4):
     move()
   turn(1)
   
-smell(1)
+smell(1, 4)
