@@ -19,8 +19,6 @@ def create_matrix(size, default_value=0):
     for j in range(0, size):
       Matrix[i][j] = default_value
   return Matrix
-
-def draw_lattice(s):
   
      
 s = Lattice(5)
