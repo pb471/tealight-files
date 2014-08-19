@@ -13,5 +13,5 @@ def create_matrix(i_max, j_max, DefaultValue=0):
   return Matrix
      
 Mat1 = create_matrix(3,3,7)
-print Mat1[3][3]
+print Mat1[2][0]
 
