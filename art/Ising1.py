@@ -21,6 +21,6 @@ def create_matrix(size, default_value=0):
   return Matrix
   
      
-s = Lattice(5)
+s = Lattice(9)
 print s.N
 
