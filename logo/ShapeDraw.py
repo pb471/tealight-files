@@ -8,7 +8,6 @@ def Draw(Name, Colour, Size):
     PolygonDraw(Colour, Size, 4)
   elif Name == "Triangle"
     PolygonDraw(Colour, Size, 3)
-  end
 
     
 def PolygonDraw(Colour, Size, Sides):
