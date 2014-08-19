@@ -22,9 +22,11 @@ def create_matrix(size, default_value=0):
 
 def draw_lattice(s):
   InitialOffset = [30,30]
+  SquareSize = [40,40]
   for i in range(0, s.side_length):
     for j in range(0, s.side_length):
-      box(i*30 + InitialOffset[0], j*30 +  InitialOffset[1], 20, 20)
+      box(i*SquareSize[0] + InitialOffset[0], j*SquareSize[1] +  InitialOffset[1], 
+          SquareSize[0]-1, SquareSize[0]-1)
   
      
 s = Lattice(9)
