@@ -10,7 +10,7 @@ ay = 0
 power = 0.1
 
 color("pink")
-text(10,10,"Rachel")
+text(50,50,"Rachel")
 
 def handle_keydown(key):
   global ax, ay
