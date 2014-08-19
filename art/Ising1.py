@@ -22,7 +22,7 @@ def create_Ising_matrix(size, magnetisation):
   for i in range(0, size):
     for j in range(0, size):
       q = random()
-      if(q < magnetisation)
+      if(q < magnetisation):
         Matrix[i][j] = 1
       else
         Matrix[i][j] = -1
