@@ -8,7 +8,7 @@ from random import random
 class Lattice:
   
   #Constructor
-  def __init__(self, side_length):
+  def __init__(self, side_length, magnetisation):
     self.Array = create_Ising_matrix(side_length, magnetisation)
     self.side_length = side_length
     self.N = side_length*side_length
@@ -42,6 +42,6 @@ def draw_lattice(s):
 #####################
 #Main
 
-s = Lattice(9)
+s = Lattice(9, 0.5)
 draw_lattice(s)
 
