@@ -14,3 +14,5 @@ for j in range(0,4):
   for i in range(0,32):
     move()
   turn(1)
+  
+smell(1)
