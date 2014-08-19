@@ -1,4 +1,3 @@
-import numpy
 from tealight.logo import (move, 
                            turn, 
                            color)
@@ -20,4 +19,7 @@ def PolygonDraw(Colour, Size, Sides):
     turn( 360.0 / Sides)
     
 Draw("Triangle", "red", 120)
-numpy.zeros(5,5)
+
+x = [[],[],[],[],[],[],[],[],[]]
+x[1][2] = 3
+print x[1][2]
