@@ -17,8 +17,7 @@ for j in range(0,4):
       move()
       move()
       move()
-    else:
+
        
-        
 turn(1)
   
