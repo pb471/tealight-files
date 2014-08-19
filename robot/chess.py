@@ -11,8 +11,7 @@ from tealight.robot import (move,
 
 
 for j in range(0,4):
-  for i in range(0,32):
+  for i in range(0,60):
     move()
   turn(1)
   
-smell(1,4)
