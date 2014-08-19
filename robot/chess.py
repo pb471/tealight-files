@@ -14,10 +14,11 @@ for j in range(0,4):
   for i in range(0,32):
     if touch() == "wall":
       turn(1)
+      move()
+      move()
+      move()
     else:
-       move()
-       move()
-       move()
+       
         
   turn(1)
   
