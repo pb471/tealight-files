@@ -11,8 +11,16 @@ def waterwheel(edges, size):
   decoration = size / 4
   for i in range(0, edges):
     move(size)
-    square(decoration)
+    #square(decoration)
+    move(decoration)
     turn(angle)
 
+def circle(side):
+  N = 100
+  angle = 360.0/N
+  for i in range(0, N)
+    move(side)
+    turn(angle)
+    
 turn(-90)
 waterwheel(12,100)
