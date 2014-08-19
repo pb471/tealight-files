@@ -2,7 +2,7 @@ print "Welcome to ShapeDraw 1.0"
 
 def Draw(Name, Colour, Size):
   if Name == "Square":
-    DrawSquare(Colour, Size)
+    PolygonDraw(Colour, Size)
 
     
 def PolygonDraw(Colour, Size, Sides):
