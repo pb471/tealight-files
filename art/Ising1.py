@@ -16,7 +16,7 @@ class Lattice:
     for i in range(0, self.side_length):
       for j in range(0, self.side_length):
         M = M + self.Array[i][j]
-    M = float(M)/s.N
+    M = float(M)/self.N
     return M
   
 class Params:
