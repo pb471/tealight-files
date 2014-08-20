@@ -59,6 +59,7 @@ def draw_lattice(s):
       
 #Neatly print magnetisation
 def print_magnetisation(s):
+  color("black")
   MagValue = s.Magnetisation() * 1
   z = "Magnetisation: %.2f " % MagValue
   text(600,600, z)
