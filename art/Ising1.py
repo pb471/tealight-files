@@ -180,6 +180,8 @@ def handle_frame():
     P.T = P.T + 0.1
   if keys["a"] == 1:
     P.T = P.T - 0.1
+  if keys["w"] == 1:
+    P.B = P.B + 0.1
   if keys["s"] == 1:
     P.B = P.B - 0.1
   
@@ -204,4 +206,4 @@ s = Lattice(P.L, P.M0)
 print_magnetisation(s)
 print_params(P)
 draw_lattice(s)
-keys = {"q" : 0, "a" : 0}
+keys = {"q" : 0, "a" : 0, "w" : 0, "s" : 0}
