@@ -189,7 +189,7 @@ def handle_frame():
   
 #####################
 #Main
-P = Params(15, #Side length
+P = Params(5, #Side length
            1, #Fraction spin-up
            -1, #J
            2, #T
