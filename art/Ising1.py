@@ -29,7 +29,7 @@ class Lattice:
     S = [0, 0, 0, 0, 0]
     S = S.GetSpins(self.Array, x, y)
   
-  def GetSpins(Array, x, y)
+  def GetSpins(Array, x, y):
     S = [0, 0, 0, 0, 0]
     
     return S
