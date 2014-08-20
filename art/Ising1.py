@@ -31,6 +31,8 @@ class Lattice:
     #Get the spin at that site and the 4 nearest neighbours
     S = [0, 0, 0, 0, 0]
     S = self.GetSpins(x, y)
+    energy_before = GetEnergy(S)
+    
     #print S
     #print self.Array
   
@@ -61,6 +63,11 @@ class Lattice:
     #print to_print
     spin_out = self.Array[x][y]
     return spin_out
+  
+  def GetEnergy(U):
+    global P
+    #Sum over nearest neighbours
+    
     
     
   
