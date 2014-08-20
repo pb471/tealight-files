@@ -37,20 +37,25 @@ def create_Ising_matrix(size, magnetisation):
         Matrix[i][j] = -1
   return Matrix
 
+#Wipe screen
+def clear_screen():
+  color("white")
+  box(0,0,screen_width,screen_height)
+
 #Draw the array of a lattice object
 def draw_lattice(s):
-  InitialOffset = [30,30]
-  SquareSize = [40,40]
+  initial_offset = [30,30]
+  square_size = [40,40]
   for i in range(0, s.side_length):
     for j in range(0, s.side_length):
       if(s.Array[i][j] == 1):
         color("red")
       else:
         color("blue")
-      box(i*SquareSize[0] + InitialOffset[0], 
-          j*SquareSize[1] +  InitialOffset[1], 
-          SquareSize[0]-1, 
-          SquareSize[0]-1)
+      box(i*square_size[0] + initial_offset[0], 
+          j*square_size[1] +  initial_offset[1], 
+          square_size[0]-1, 
+          square_size[0]-1)
       
 #Neatly print magnetisation
 def print_magnetisation(s):
@@ -60,6 +65,7 @@ def print_magnetisation(s):
   
 #Test frame event
 def handle_frame():
+  clear_screen()
   s = Lattice(12, 0.5)
   print_magnetisation(s)
   draw_lattice(s)
