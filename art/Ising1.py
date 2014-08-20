@@ -145,7 +145,7 @@ def create_Ising_matrix(size, magnetisation):
 #Wipe screen
 def clear_screen():
   color("white")
-  box(0,0,screen_width,screen_height)
+  box(0,0,screen_width,650)
 
 #Draw the array of a lattice object
 def draw_lattice(s):
