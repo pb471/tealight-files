@@ -20,7 +20,7 @@ class Lattice:
     return M
   
 class Params:
-  def __init__(self, L, M0, J, T, B):s
+  def __init__(self, L, M0, J, T, B):
     self.L = L
     self.M0 = M0
     self.J = J
