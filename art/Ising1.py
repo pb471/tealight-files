@@ -89,7 +89,7 @@ class Lattice:
     energy = P.J * spin[0] * spin_sum
     
     #Add magnetic field energy
-    mag_energy = sum(spin) * B
+    mag_energy = sum(spin) * P.B
     energy = energy + mag_energy
     return energy
      
