@@ -35,10 +35,10 @@ class Lattice:
   def GetSpins(self, x, y):
     S = [0, 0, 0, 0, 0]
     S[0] = self.Array[x][y]
-    S[1] = GetSpinCyclicBC(self.Array, x+1,y)
-    S[2] = GetSpinCyclicBC(self.Array, x-1,y)
-    S[3] = GetSpinCyclicBC(self.Array, x,y+1)
-    S[4] = GetSpinCyclicBC(self.Array, x,y-1)
+    S[1] = self.GetSpinCyclicBC(self.Array, x+1,y)
+    S[2] = self.GetSpinCyclicBC(self.Array, x-1,y)
+    S[3] = self.GetSpinCyclicBC(self.Array, x,y+1)
+    S[4] = self.GetSpinCyclicBC(self.Array, x,y-1)
     return S
   
   #Returns a single spin, enforcing cyclic BCs
