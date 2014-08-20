@@ -89,8 +89,8 @@ P = Params(9, #Side length
            1, #J
            1, #T
            0, #Field
-           "red", #spin-up colour
-           "blue") #spin-down colour
+           "pink", #spin-up colour
+           "purple") #spin-down colour
 S = Lattice(P.L, P.M0)
 print_magnetisation(S)
 draw_lattice(S)
