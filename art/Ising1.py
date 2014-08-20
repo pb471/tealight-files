@@ -24,8 +24,15 @@ class Lattice:
     #Create pair of randoms
     x = randint(0,self.side_length - 1)
     y = randint(0, self.side_length - 1)
-    print x
-    print y
+    
+    #Get the spin at that site and the 4 nearest neighbours
+    S = [0, 0, 0, 0, 0]
+    S = S.GetSpins(self.Array, x, y)
+  
+  def GetSpins(Array, x, y)
+    S = [0, 0, 0, 0, 0]
+    
+    return S
   
 class Params:
   def __init__(self, L, M0, J, T, B, colour1, colour2):
@@ -114,5 +121,3 @@ S = Lattice(P.L, P.M0)
 print_magnetisation(S)
 print_params(P)
 draw_lattice(S)
-for i in range(0,10):
-  print i
