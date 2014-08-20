@@ -75,7 +75,7 @@ def handle_keydown(a):
 #####################
 #Main
 
-s = Lattice(12, 0.5)
+s = Lattice(12, 0.9)
 print_magnetisation(s)
 draw_lattice(s)
 
