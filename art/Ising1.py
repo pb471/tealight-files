@@ -44,7 +44,7 @@ class Lattice:
     if r < boltzmann_value:
       self.Array[x][y] = -self.Array[x][y]
       
-    draw_lattice(s)
+    draw_lattice(self)
     
     #co_ords = [x, y]
     #print co_ords
