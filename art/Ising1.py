@@ -41,7 +41,7 @@ class Lattice:
     energy_change = energy_after - energy_before
     r = random()
     boltzmann_value = exp(-(energychange)/P.T)
-    if r < boltzmann)value:
+    if r < boltzmann_value:
       self.Array[x][y] = -self.Array[x][y]
     
     #co_ords = [x, y]
