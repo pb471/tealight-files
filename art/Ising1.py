@@ -20,6 +20,7 @@ class Lattice:
     M = float(M)/self.N
     return M
   
+  #Runs the Metropolis algorithm on the spin lattice
   def MetropolisAlg(self):
     #Create pair of randoms
     x = randint(0,self.side_length - 1)
@@ -27,12 +28,31 @@ class Lattice:
     
     #Get the spin at that site and the 4 nearest neighbours
     S = [0, 0, 0, 0, 0]
-    S = S.GetSpins(self.Array, x, y)
+    S = S.GetSpins(x, y)
   
-  def GetSpins(Array, x, y):
+  #Returns a vector of 5 spins: a spin and its nearest neighbours
+  def GetSpins(self, x, y):
     S = [0, 0, 0, 0, 0]
-    
+    S[0] = Array[x][y]
+    S[1] = GetSpinCyclicBC(Array, x+1,y)
     return S
+  
+  #Returns a single spin, enforcing cyclic BCs
+  def GetSpinCyclicBC(self, x, y)
+  
+    if x == self.side_length:
+      x = 0
+    elif x < 0:
+      x = (self.side_length - 1)
+      
+    if y == self.side_length:
+      y = 0
+    elif x < 0:
+      y = (self.side_length - 1)
+      
+    S = self.Array[x][y]
+    
+    
   
 class Params:
   def __init__(self, L, M0, J, T, B, colour1, colour2):
