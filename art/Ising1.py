@@ -80,7 +80,7 @@ def print_params(P):
   t[1] = str(P.T)
   t[2] = str(P.B)
   to_print = "J = " + t[1] + "\n T = " + t[2]
-  text(600,100, t)
+  text(600,600, to_print)
   
   
 #Test frame event
