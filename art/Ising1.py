@@ -173,9 +173,9 @@ def handle_keydown(a):
 #####################
 #Main
 P = Params(10, #Side length
-           0.5, #Fraction spin-up
+           1, #Fraction spin-up
            -1, #J
-           0.02, #T
+           20, #T
            0, #Field
            10, #Metropolis steps per key press
            "green", #spin-up colour
