@@ -6,8 +6,6 @@ from random import random
 #################
 #Classdefs
 class Lattice:
-  
-  #Constructor
   def __init__(self, side_length, magnetisation):
     self.Array = create_Ising_matrix(side_length, magnetisation)
     self.side_length = side_length
@@ -20,6 +18,14 @@ class Lattice:
         M = M + self.Array[i][j]
     M = float(M)/s.N
     return M
+  
+class Params:
+  def __init__(self, L, M0, J, T, B):s
+    self.L = L
+    self.M0 = M0
+    self.J = J
+    self.T = T
+    self.B = B
         
 
 ################
@@ -66,16 +72,17 @@ def print_magnetisation(s):
   
 #Test frame event
 def handle_keydown(a):
+  global P
   clear_screen()
-  s = Lattice(12, 0.5)
+  s = Lattice(P.L, P.M0)
   print_magnetisation(s)
   draw_lattice(s)
 
   
 #####################
 #Main
-
-s = Lattice(12, 0.9)
-print_magnetisation(s)
-draw_lattice(s)
+global P = Params(9,0.5,1, 1, 0)
+S = Lattice(P.L, P.M0)
+print_magnetisation(S)
+draw_lattice(S)
 
