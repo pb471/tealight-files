@@ -161,7 +161,7 @@ def print_params(P):
   t[1] = str(P.T)
   t[2] = str(P.B)
   to_print = "J = " + t[0] + " T = " + t[1] + " B = " + t[2]
-  text(0,650, to_print)
+  text(10,650, to_print)
   
   
 #Handle keypresses
@@ -189,7 +189,7 @@ def handle_frame():
   
 #####################
 #Main
-P = Params(5, #Side length
+P = Params(20, #Side length
            1, #Fraction spin-up
            -1, #J
            2, #T
