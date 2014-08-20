@@ -178,7 +178,8 @@ def handle_frame():
   global P
   sleep(P.SleepTime)
   clear_screen()
-  s.MetropolisAlg()
+  for i in range(0,P.MetSteps):
+    s.MetropolisAlg()
   draw_lattice(s)
   print_params(P)
   print_magnetisation(s)
@@ -190,7 +191,7 @@ P = Params(15, #Side length
            -1, #J
            0.02, #T
            0, #Field
-           200, #Metropolis steps per key press
+           20, #Metropolis steps per key press
            20, #Sleep time
            "green", #spin-up colour
            "brown") #spin-down colour
