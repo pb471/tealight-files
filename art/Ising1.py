@@ -162,7 +162,7 @@ def print_params(P):
   
   
 #Test frame event
-def handle_keydown("a"):
+def handle_keydown(a):
   global P
   clear_screen()
   for i in range(0,P.MetSteps):
