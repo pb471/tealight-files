@@ -40,7 +40,7 @@ class Lattice:
     #Test against Boltzmann
     energy_change = energy_after - energy_before
     r = random()
-    boltzmann_value = exp(-(energychange)/P.T)
+    boltzmann_value = exp(-(energy_change)/P.T)
     if r < boltzmann_value:
       self.Array[x][y] = -self.Array[x][y]
     
