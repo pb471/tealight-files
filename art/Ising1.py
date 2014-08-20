@@ -79,7 +79,7 @@ def print_params(P):
   t[0] = str(P.J)
   t[1] = str(P.T)
   t[2] = str(P.B)
-  to_print = "J = " + t[1] + "\n T = " + t[2]
+  to_print = "J = " + t[0] + " T = " + t[1] + " B = " + t[2]
   text(600,100, to_print)
   
   
