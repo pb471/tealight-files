@@ -164,18 +164,29 @@ def print_params(P):
   text(600,100, to_print)
   
   
-#Test frame event
+#Handle keypresses
 def handle_keydown(key):
   if key == "q":
-    P.T = P.T + 0.1
+    keys{"q" : 1}
   if key == "a":
-     P.T = P.T - 0.1
+    keys{"a"} : 1}
+    
+def handle_keyup(key):
+  if key == "q":
+    keys{"q" : 0}
+  if key == "a":
+    keys{"a"} : 0}
   
   
 def handle_frame():
   global P
   sleep(P.SleepTime)
   clear_screen()
+  if keys["q"] == 1:
+    P.T = P.T + 0.1
+  if keys["a"] == 1
+    P.T = P.T - 0.1
+  
   for i in range(0,P.MetSteps):
     s.MetropolisAlg()
   draw_lattice(s)
