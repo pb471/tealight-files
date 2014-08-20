@@ -195,6 +195,8 @@ def handle_frame():
   print_params(P)
   print_magnetisation(s)
   
+  plot
+  
 #####################
 #Main
 P = Params(12, #Side length
