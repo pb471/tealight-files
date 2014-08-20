@@ -43,8 +43,6 @@ class Lattice:
     boltzmann_value = exp(-(energy_change)/P.T)
     if r < boltzmann_value:
       self.Array[x][y] = -self.Array[x][y]
-      
-    draw_lattice(self)
     
     #co_ords = [x, y]
     #print co_ords
@@ -91,12 +89,13 @@ class Lattice:
     return energy
      
 class Params:
-  def __init__(self, L, M0, J, T, B, colour1, colour2):
+  def __init__(self, L, M0, J, T, B, MetSteps, colour1, colour2):
     self.L = L
     self.M0 = M0
     self.J = J
     self.T = T
     self.B = B
+    self.MetSteps
     self.UpColour = colour1
     self.DownColour = colour2
         
@@ -166,10 +165,9 @@ def print_params(P):
 def handle_keydown(a):
   global P
   clear_screen()
-  print_magnetisation(s)
-  print_params(P)
+  for i in range(0,P.MetSteps):
+    s.MetropolisAlg()
   draw_lattice(s)
-  s.MetropolisAlg()
 
   
 #####################
@@ -179,6 +177,7 @@ P = Params(4, #Side length
            -1, #J
            0.02, #T
            0, #Field
+           10, #Metropolis steps per key press
            "green", #spin-up colour
            "brown") #spin-down colour
 s = Lattice(P.L, P.M0)
