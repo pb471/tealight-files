@@ -166,16 +166,10 @@ def print_params(P):
   
 #Handle keypresses
 def handle_keydown(key):
-  if key == "q":
-    keys["q"] = 1
-  if key == "a":
-    keys["a"] = 1
+  keys[key] = 1
     
 def handle_keyup(key):
-  if key == "q":
-    keys["q"] = 0
-  if key == "a":
-    keys["a"] = 0
+  keys[key] = 0
   
   
 def handle_frame():
@@ -184,7 +178,7 @@ def handle_frame():
   clear_screen()
   if keys["q"] == 1:
     P.T = P.T + 0.1
-  if keys["a"] == 1
+  if keys["a"] == 1:
     P.T = P.T - 0.1
   
   for i in range(0,P.MetSteps):
