@@ -173,9 +173,9 @@ def handle_keydown(key):
     
 def handle_keyup(key):
   if key == "q":
-    keys{"q" : 0}
+    keys = {"q" : 0}
   if key == "a":
-    keys{"a"} : 0}
+    keys = {"a" : 0}
   
   
 def handle_frame():
