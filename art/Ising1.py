@@ -151,7 +151,7 @@ def draw_lattice(s):
 def print_magnetisation(s):
   color("black")
   t = "Magnetisation: %.2f " % s.Magnetisation()
-  text(600,600, t)
+  text(50,600, t)
 
 #Neatly print parameters
 def print_params(P):
@@ -161,7 +161,7 @@ def print_params(P):
   t[1] = str(P.T)
   t[2] = str(P.B)
   to_print = "J = " + t[0] + " T = " + t[1] + " B = " + t[2]
-  text(600,100, to_print)
+  text(0,650, to_print)
   
   
 #Handle keypresses
