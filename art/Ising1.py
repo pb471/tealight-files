@@ -34,11 +34,11 @@ class Lattice:
   #Returns a vector of 5 spins: a spin and its nearest neighbours
   def GetSpins(self, x, y):
     S = [0, 0, 0, 0, 0]
-    S[0] = Array[x][y]
-    S[1] = GetSpinCyclicBC(Array, x+1,y)
-    S[2] = GetSpinCyclicBC(Array, x-1,y)
-    S[3] = GetSpinCyclicBC(Array, x,y+1)
-    S[4] = GetSpinCyclicBC(Array, x,y-1)
+    S[0] = self.Array[x][y]
+    S[1] = GetSpinCyclicBC(self.Array, x+1,y)
+    S[2] = GetSpinCyclicBC(self.Array, x-1,y)
+    S[3] = GetSpinCyclicBC(self.Array, x,y+1)
+    S[4] = GetSpinCyclicBC(self.Array, x,y-1)
     return S
   
   #Returns a single spin, enforcing cyclic BCs
