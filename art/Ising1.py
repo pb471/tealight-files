@@ -90,7 +90,7 @@ class Lattice:
     
     #Add magnetic field energy
     mag_energy = sum(spin) * P.B
-    energy = energy + mag_energy
+    energy = energy - mag_energy
     return energy
      
 class Params:
