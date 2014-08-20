@@ -25,6 +25,8 @@ class Lattice:
     #Create pair of randoms
     x = randint(0,self.side_length - 1)
     y = randint(0, self.side_length - 1)
+    co_ords = [x, y]
+    print co_ords
     
     #Get the spin at that site and the 4 nearest neighbours
     S = [0, 0, 0, 0, 0]
