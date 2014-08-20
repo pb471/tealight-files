@@ -2,6 +2,7 @@
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 from tealight.art import (screen_width, screen_height)
 from random import random
+from random import randint
 
 #################
 #Classdefs
@@ -111,5 +112,5 @@ S = Lattice(P.L, P.M0)
 print_magnetisation(S)
 print_params(P)
 draw_lattice(S)
-z = random(1,5)
+z = randint(1,5)
 print z
