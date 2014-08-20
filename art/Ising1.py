@@ -157,6 +157,3 @@ P = Params(4, #Side length
            "green", #spin-up colour
            "brown") #spin-down colour
 S = Lattice(P.L, P.M0)
-print_magnetisation(S)
-print_params(P)
-draw_lattice(S)
