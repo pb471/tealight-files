@@ -43,6 +43,8 @@ class Lattice:
     boltzmann_value = exp(-(energy_change)/P.T)
     if r < boltzmann_value:
       self.Array[x][y] = -self.Array[x][y]
+      
+    draw_lattice(s)
     
     #co_ords = [x, y]
     #print co_ords
@@ -86,8 +88,6 @@ class Lattice:
     
     #Get energy
     energy = P.J * spin[0] * spin_sum
-    print spin
-    print energy
     return energy
      
 class Params:
