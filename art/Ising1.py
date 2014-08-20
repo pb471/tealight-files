@@ -4,6 +4,7 @@ from tealight.art import (screen_width, screen_height)
 from random import random
 from random import randint
 from math import exp
+from tealight.utils import sleep
 
 #################
 #Classdefs
