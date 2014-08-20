@@ -28,7 +28,7 @@ class Lattice:
     
     #Get the spin at that site and the 4 nearest neighbours
     S = [0, 0, 0, 0, 0]
-    S = S.GetSpins(x, y)
+    S = self.GetSpins(x, y)
     print S
   
   #Returns a vector of 5 spins: a spin and its nearest neighbours
