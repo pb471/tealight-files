@@ -87,6 +87,10 @@ class Lattice:
     
     #Get energy
     energy = P.J * spin[0] * spin_sum
+    
+    #Add magnetic field energy
+    mag_energy = sum(spin) * B
+    energy = energy + mag_energy
     return energy
      
 class Params:
