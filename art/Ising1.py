@@ -191,7 +191,7 @@ P = Params(15, #Side length
            0.02, #T
            0, #Field
            200, #Metropolis steps per key press
-           10, #Sleep time
+           20, #Sleep time
            "green", #spin-up colour
            "brown") #spin-down colour
 s = Lattice(P.L, P.M0)
