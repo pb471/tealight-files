@@ -38,7 +38,7 @@ class Lattice:
     return S
   
   #Returns a single spin, enforcing cyclic BCs
-  def GetSpinCyclicBC(self, x, y)
+  def GetSpinCyclicBC(self, x, y):
   
     if x == self.side_length:
       x = 0
