@@ -22,8 +22,10 @@ class Lattice:
   
   def MetropolisAlg(self):
     #Create pair of randoms
-    z = 1
-    print z
+    x = randint(0,self.side_length - 1)
+    y = randint(0, self.side_length - 1)
+    print x
+    print y
   
 class Params:
   def __init__(self, L, M0, J, T, B, colour1, colour2):
@@ -97,6 +99,7 @@ def handle_keydown(a):
   print_magnetisation(s)
   print_params(P)
   draw_lattice(s)
+  S.MetropolisAlg
 
   
 #####################
@@ -112,5 +115,3 @@ S = Lattice(P.L, P.M0)
 print_magnetisation(S)
 print_params(P)
 draw_lattice(S)
-z = randint(1,5)
-print z
