@@ -115,7 +115,10 @@ class Graph:
     
   def Clear(self):
     color("black")
-    box(self.x, self.y, self.x_width, self.y_width) 
+    box(self.x, self.y, self.x_width, self.y_width)
+  
+  def AddPoint(self, px, py);
+    print px
         
 
 ################
