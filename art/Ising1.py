@@ -196,8 +196,8 @@ P = Params(15, #Side length
            0, #Field
            20, #Metropolis steps per key press
            20, #Sleep time
-           "green", #spin-up colour
-           "brown") #spin-down colour
+           "purple", #spin-up colour
+           "pink") #spin-down colour
 s = Lattice(P.L, P.M0)
 print_magnetisation(s)
 print_params(P)
