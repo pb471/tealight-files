@@ -170,7 +170,14 @@ def handle_keydown(a):
   draw_lattice(s)
   print_params(P)
   print_magnetisation(s)
-
+  
+def handle_frame
+  sleep(30)
+  clear_screen()
+  s.MetropolisAlg()
+  draw_lattice(s)
+  print_params(P)
+  print_magnetisation(s)
   
 #####################
 #Main
