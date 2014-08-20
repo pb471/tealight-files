@@ -81,7 +81,7 @@ def handle_keydown(a):
   
 #####################
 #Main
-global P = Params(9,0.5,1, 1, 0)
+P = Params(9,0.5,1, 1, 0)
 S = Lattice(P.L, P.M0)
 print_magnetisation(S)
 draw_lattice(S)
