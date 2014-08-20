@@ -214,7 +214,7 @@ def handle_frame():
   draw_lattice(s)
   print_params(P)
   print_magnetisation(s)
-  G.AddPoint(P.T, s.Magnetisation() )
+  #G.AddPoint(P.T, s.Magnetisation() )
   
   
 #####################
