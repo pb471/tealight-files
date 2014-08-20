@@ -171,7 +171,7 @@ def handle_keydown(a):
   print_params(P)
   print_magnetisation(s)
   
-def handle_frame
+def handle_frame():
   sleep(30)
   clear_screen()
   s.MetropolisAlg()
