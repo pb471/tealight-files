@@ -107,18 +107,24 @@ class Params:
     self.DownColour = colour2
     
 class Graph:
-  def __init__(self, x, y, x_width, y_width):
+  def __init__(self, x, y, x_width, y_width, 
+               px_max, py_max, point_size, colour):
     self.x = x
     self.y = y
     self.x_width = x_width
     self.y_width = y_width
+    self.px_max = px_max
+    self.py_max = py_max
+    self.point_size = point_size
+    self.colour = colour
     
   def Clear(self):
     color("black")
     box(self.x, self.y, self.x_width, self.y_width)
   
-  def AddPoint(self, px, py):
-    print px
+  #def AddPoint(self, px, py):
+    #circle
+    
         
 
 ################
@@ -223,7 +229,11 @@ P = Params(10, #Side length
            "purple", #spin-up colour
            "pink") #spin-down colour
 s = Lattice(P.L, P.M0)
-G = Graph(30, 700, 200, 200)
+G = Graph(30, 700, #graph location
+          200, 200, #graph size
+          10, 1, #max px and py values
+          5, #Point size
+          "red") #colour
 G.Clear()
 print_magnetisation(s)
 print_params(P)
