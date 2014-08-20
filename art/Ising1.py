@@ -174,7 +174,7 @@ def handle_keydown(a):
   
 #####################
 #Main
-P = Params(10, #Side length
+P = Params(15, #Side length
            1, #Fraction spin-up
            -1, #J
            20, #T
