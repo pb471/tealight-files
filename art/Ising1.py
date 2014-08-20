@@ -192,7 +192,7 @@ def handle_frame():
 P = Params(15, #Side length
            1, #Fraction spin-up
            -1, #J
-           20, #T
+           2, #T
            0, #Field
            20, #Metropolis steps per key press
            20, #Sleep time
