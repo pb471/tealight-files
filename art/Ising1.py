@@ -20,12 +20,14 @@ class Lattice:
     return M
   
 class Params:
-  def __init__(self, L, M0, J, T, B):
+  def __init__(self, L, M0, J, T, B, colour1, colour2):
     self.L = L
     self.M0 = M0
     self.J = J
     self.T = T
     self.B = B
+    self.UpColour = colour1
+    self.DownColour = colour2
         
 
 ################
@@ -50,14 +52,15 @@ def clear_screen():
 
 #Draw the array of a lattice object
 def draw_lattice(s):
+  global P
   initial_offset = [30,30]
   square_size = [40,40]
   for i in range(0, s.side_length):
     for j in range(0, s.side_length):
       if(s.Array[i][j] == 1):
-        color("red")
+        color(P.UpColour)
       else:
-        color("blue")
+        color(P.DownColour)
       box(i*square_size[0] + initial_offset[0], 
           j*square_size[1] +  initial_offset[1], 
           square_size[0]-1, 
@@ -81,7 +84,13 @@ def handle_keydown(a):
   
 #####################
 #Main
-P = Params(9,0.5,1, 1, 0)
+P = Params(9, #Side length
+           0.5, #Fraction spin-up
+           1, #J
+           1, #T
+           0 #Field
+           "red", #spin-up colour
+           "blue") #spin-down colour
 S = Lattice(P.L, P.M0)
 print_magnetisation(S)
 draw_lattice(S)
