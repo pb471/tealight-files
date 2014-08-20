@@ -23,6 +23,7 @@ class Lattice:
   
   #Runs the Metropolis algorithm on the spin lattice
   def MetropolisAlg(self):
+    global P
     #Create pair of randoms
     x = randint(0,self.side_length - 1)
     y = randint(0, self.side_length - 1)
@@ -30,15 +31,18 @@ class Lattice:
     #Get the spin at that site and the 4 nearest neighbours
     spin = [0, 0, 0, 0, 0]
     spin = self.GetSpins(x, y)
-    energy_before = self.GetEnergy(spin)
     
-    self.Array[x][y] = -self.Array[x][y]
+    #Get energy, try a spin flip, get new energy
+    energy_before = self.GetEnergy(spin)
     spin[0] = -spin[0]
     energy_after = self.GetEnergy(spin)
     
     #Test against Boltzmann
     energy_change = energy_after - energy_before
     r = random()
+    boltzmann_value = exp(-(energychange)/P.T)
+    if r < boltzmann)value:
+      self.Array[x][y] = -self.Array[x][y]
     
     #co_ords = [x, y]
     #print co_ords
