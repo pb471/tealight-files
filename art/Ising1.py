@@ -95,7 +95,7 @@ class Params:
     self.J = J
     self.T = T
     self.B = B
-    self.MetSteps
+    self.MetSteps = MetSteps
     self.UpColour = colour1
     self.DownColour = colour2
         
