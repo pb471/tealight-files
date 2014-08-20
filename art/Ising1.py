@@ -105,6 +105,17 @@ class Params:
     self.SleepTime = SleepTime
     self.UpColour = colour1
     self.DownColour = colour2
+    
+class Graph:
+  def __init__(self, x, y, x_width, y_width):
+    self.x = x
+    self.y = y
+    self.x_width = x_width
+    self.y_width = y_width
+    
+  def Clear(self):
+    color("black")
+    box(self.x, self.y, self.x_width, self.y_width) 
         
 
 ################
@@ -194,6 +205,7 @@ def handle_frame():
   draw_lattice(s)
   print_params(P)
   print_magnetisation(s)
+  G.AddPoint(P.T, s.Magnetisation() )
   
   
 #####################
@@ -208,6 +220,8 @@ P = Params(10, #Side length
            "purple", #spin-up colour
            "pink") #spin-down colour
 s = Lattice(P.L, P.M0)
+G = Graph(30, 700, 200, 200)
+G.Clear()
 print_magnetisation(s)
 print_params(P)
 draw_lattice(s)
