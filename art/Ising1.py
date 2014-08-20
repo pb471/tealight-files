@@ -169,7 +169,7 @@ def handle_keydown(key):
   if key == "q":
     keys = {"q" : 1}
   if key == "a":
-    keys = {"a"} : 1}
+    keys = {"a" : 1}
     
 def handle_keyup(key):
   if key == "q":
