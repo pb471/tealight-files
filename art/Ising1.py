@@ -69,9 +69,18 @@ def draw_lattice(s):
 #Neatly print magnetisation
 def print_magnetisation(s):
   color("black")
-  MagValue = s.Magnetisation() * 1
-  z = "Magnetisation: %.2f " % MagValue
-  text(600,600, z)
+  t = "Magnetisation: %.2f " % s.Magnetisation()
+  text(600,600, t)
+
+#Neatly print parameters
+def print_params(P)
+  color("black")
+  t[1] = str(P.J)
+  t[2] = str(P.T)
+  t[3] = str(P.B)
+  to_print = "J = " + t[1] + "\n T = " + t[2]
+  text(600,100, t)
+  
   
 #Test frame event
 def handle_keydown(a):
@@ -79,6 +88,7 @@ def handle_keydown(a):
   clear_screen()
   s = Lattice(P.L, P.M0)
   print_magnetisation(s)
+  print_params(P)
   draw_lattice(s)
 
   
