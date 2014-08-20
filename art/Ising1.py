@@ -31,6 +31,10 @@ class Lattice:
     spin = self.GetSpins(x, y)
     energy_before = self.GetEnergy(spin)
     
+    self.Array[x,y] = -self.Array[x,y]
+    spin[0] = -spin[0]
+    energy_after = self.GetEnergy(spin)
+    
     #co_ords = [x, y]
     #print co_ords
     #print S
