@@ -32,7 +32,7 @@ class Lattice:
     S = [0, 0, 0, 0, 0]
     S = self.GetSpins(x, y)
     #print S
-    print self.Array
+    #print self.Array
   
   #Returns a vector of 5 spins: a spin and its nearest neighbours
   def GetSpins(self, x, y):
