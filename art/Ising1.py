@@ -168,6 +168,7 @@ def handle_keydown(a):
   for i in range(0,P.MetSteps):
     s.MetropolisAlg()
   draw_lattice(s)
+  print_params(P)
 
   
 #####################
@@ -177,7 +178,7 @@ P = Params(10, #Side length
            -1, #J
            20, #T
            0, #Field
-           10, #Metropolis steps per key press
+           50, #Metropolis steps per key press
            "green", #spin-up colour
            "brown") #spin-down colour
 s = Lattice(P.L, P.M0)
