@@ -75,10 +75,9 @@ def print_magnetisation(s):
 #Neatly print parameters
 def print_params(P):
   color("black")
-  t = []
-  t[1] = str(P.J)
-  t[2] = str(P.T)
-  t[3] = str(P.B)
+  t[0] = str(P.J)
+  t[1] = str(P.T)
+  t[2] = str(P.B)
   to_print = "J = " + t[1] + "\n T = " + t[2]
   text(600,100, t)
   
