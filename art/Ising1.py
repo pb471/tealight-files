@@ -177,7 +177,7 @@ def handle_keydown(a):
 P = Params(8, #Side length
            0.5, #Fraction spin-up
            -1, #J
-           1, #T
+           0.02, #T
            0, #Field
            "green", #spin-up colour
            "brown") #spin-down colour
