@@ -26,12 +26,12 @@ class Lattice:
     x = randint(0,self.side_length - 1)
     y = randint(0, self.side_length - 1)
     co_ords = [x, y]
-    print co_ords
+    #print co_ords
     
     #Get the spin at that site and the 4 nearest neighbours
     S = [0, 0, 0, 0, 0]
     S = self.GetSpins(x, y)
-    print S
+    #print S
     print self.Array
   
   #Returns a vector of 5 spins: a spin and its nearest neighbours
@@ -57,8 +57,8 @@ class Lattice:
     elif y < 0:
       y = (self.side_length - 1)
     
-    to_print = [x, y]
-    print to_print
+    #to_print = [x, y]
+    #print to_print
     spin_out = self.Array[x][y]
     return spin_out
     
