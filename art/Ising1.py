@@ -64,7 +64,7 @@ def print_magnetisation(s):
   text(600,600, z)
   
 #Test frame event
-def handle_keypress("a"):
+def handle_keydown("a"):
   clear_screen()
   s = Lattice(12, 0.5)
   print_magnetisation(s)
