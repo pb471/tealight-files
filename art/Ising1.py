@@ -31,7 +31,7 @@ class Lattice:
     #Get the spin at that site and the 4 nearest neighbours
     S = [0, 0, 0, 0, 0]
     S = self.GetSpins(x, y)
-    print S
+    print self.Array
   
   #Returns a vector of 5 spins: a spin and its nearest neighbours
   def GetSpins(self, x, y):
