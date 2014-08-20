@@ -29,6 +29,7 @@ class Lattice:
     #Get the spin at that site and the 4 nearest neighbours
     S = [0, 0, 0, 0, 0]
     S = S.GetSpins(x, y)
+    print S
   
   #Returns a vector of 5 spins: a spin and its nearest neighbours
   def GetSpins(self, x, y):
@@ -129,12 +130,13 @@ def handle_keydown(a):
   print_magnetisation(s)
   print_params(P)
   draw_lattice(s)
+  S.MetropolisAlg()
 
   
 #####################
 #Main
 P = Params(14, #Side length
-           1, #Fraction spin-up
+           0.5, #Fraction spin-up
            1, #J
            1, #T
            0, #Field
