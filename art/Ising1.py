@@ -113,11 +113,11 @@ def draw_lattice(s):
           square_size[0]-1)
       
       #Print co-ords and spin
-      color("black")
-      t = str(i) + str(j) + str(s.Array[i][j])
-      text(i*square_size[0] + initial_offset[0], 
-          j*square_size[1] +  initial_offset[1],
-          t)
+      #color("black")
+      #t = str(i) + str(j) + str(s.Array[i][j])
+      #text(i*square_size[0] + initial_offset[0], 
+          #j*square_size[1] +  initial_offset[1],
+          #t)
       
 #Neatly print magnetisation
 def print_magnetisation(s):
