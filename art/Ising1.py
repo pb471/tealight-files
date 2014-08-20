@@ -167,15 +167,15 @@ def print_params(P):
 #Handle keypresses
 def handle_keydown(key):
   if key == "q":
-    keys = {"q" : 1}
+    keys["q"] = 1
   if key == "a":
-    keys = {"a" : 1}
+    keys["a"] = 1
     
 def handle_keyup(key):
   if key == "q":
-    keys = {"q" : 0}
+    keys["q"] = 0
   if key == "a":
-    keys = {"a" : 0}
+    keys["a"] = 0
   
   
 def handle_frame():
@@ -208,3 +208,4 @@ s = Lattice(P.L, P.M0)
 print_magnetisation(s)
 print_params(P)
 draw_lattice(s)
+keys = {"q" : 0, "a" : 0}
