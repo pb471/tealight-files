@@ -54,7 +54,8 @@ class Lattice:
     elif x < 0:
       y = (self.side_length - 1)
       
-    S = self.Array[x][y]
+    spin_out = self.Array[x][y]
+    return spin_out
     
     
   
