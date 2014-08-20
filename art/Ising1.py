@@ -90,13 +90,15 @@ class Lattice:
     return energy
      
 class Params:
-  def __init__(self, L, M0, J, T, B, MetSteps, colour1, colour2):
+  def __init__(self, L, M0, J, T, B, MetSteps, SleepTime,
+               colour1, colour2):
     self.L = L
     self.M0 = M0
     self.J = J
     self.T = T
     self.B = B
     self.MetSteps = MetSteps
+    self.SleepTime = SleepTime
     self.UpColour = colour1
     self.DownColour = colour2
         
@@ -173,7 +175,8 @@ def handle_keydown(a):
   print_magnetisation(s)
   
 def handle_frame():
-  sleep(30)
+  global P
+  sleep(P.SleepTime)
   clear_screen()
   s.MetropolisAlg()
   draw_lattice(s)
@@ -188,6 +191,7 @@ P = Params(15, #Side length
            0.02, #T
            0, #Field
            200, #Metropolis steps per key press
+           30, #Sleep time
            "green", #spin-up colour
            "brown") #spin-down colour
 s = Lattice(P.L, P.M0)
