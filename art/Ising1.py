@@ -53,7 +53,7 @@ class Lattice:
       
     if y == self.side_length:
       y = 0
-    elif x < 0:
+    elif y < 0:
       y = (self.side_length - 1)
     
     to_print = [x, y]
