@@ -99,6 +99,7 @@ def handle_keydown(a):
   print_magnetisation(s)
   print_params(P)
   draw_lattice(s)
+  S.MetropolisAlg()
 
   
 #####################
@@ -114,4 +115,3 @@ S = Lattice(P.L, P.M0)
 print_magnetisation(S)
 print_params(P)
 draw_lattice(S)
-S.MetropolisAlg
