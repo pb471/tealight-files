@@ -62,6 +62,7 @@ def print_magnetisation(s):
 def handle_frame():
   s = Lattice(12, 0.5)
   print_magnetisation(s)
+  draw_lattice(s)
 
   
 #####################
@@ -69,6 +70,5 @@ def handle_frame():
 
 s = Lattice(12, 0.5)
 print_magnetisation(s)
-mag_string = s.Magnetisation()
 draw_lattice(s)
 
