@@ -112,7 +112,7 @@ def draw_lattice(s):
       color("black")
       text(i*square_size[0] + initial_offset[0], 
           j*square_size[1] +  initial_offset[1],
-          s.Array[i][j])
+          [i,j,s.Array[i][j])
       
 #Neatly print magnetisation
 def print_magnetisation(s):
