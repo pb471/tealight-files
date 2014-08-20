@@ -66,7 +66,7 @@ class Lattice:
     
     return spin_out
   
-  def GetEnergy(spin):
+  def GetEnergy(self, spin):
     global P
     #Sum over nearest neighbours
     spin_sum = sum(spin) - spin[0]
