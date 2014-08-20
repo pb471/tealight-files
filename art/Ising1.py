@@ -25,26 +25,26 @@ class Lattice:
     #Create pair of randoms
     x = randint(0,self.side_length - 1)
     y = randint(0, self.side_length - 1)
-    co_ords = [x, y]
-    #print co_ords
     
     #Get the spin at that site and the 4 nearest neighbours
-    S = [0, 0, 0, 0, 0]
-    S = self.GetSpins(x, y)
-    energy_before = GetEnergy(S)
+    spin = [0, 0, 0, 0, 0]
+    spin = self.GetSpins(x, y)
+    energy_before = self.GetEnergy(spin)
     
+    #co_ords = [x, y]
+    #print co_ords
     #print S
     #print self.Array
   
   #Returns a vector of 5 spins: a spin and its nearest neighbours
   def GetSpins(self, x, y):
-    S = [0, 0, 0, 0, 0]
-    S[0] = self.Array[x][y]
-    S[1] = self.GetSpinCyclicBC(x+1,y)
-    S[2] = self.GetSpinCyclicBC(x-1,y)
-    S[3] = self.GetSpinCyclicBC(x,y+1)
-    S[4] = self.GetSpinCyclicBC(x,y-1)
-    return S
+    spin = [0, 0, 0, 0, 0]
+    spin[0] = self.Array[x][y]
+    spin[1] = self.GetSpinCyclicBC(x+1,y)
+    spin[2] = self.GetSpinCyclicBC(x-1,y)
+    spin[3] = self.GetSpinCyclicBC(x,y+1)
+    spin[4] = self.GetSpinCyclicBC(x,y-1)
+    return spin
   
   #Returns a single spin, enforcing cyclic BCs
   def GetSpinCyclicBC(self, x, y):
@@ -59,14 +59,23 @@ class Lattice:
     elif y < 0:
       y = (self.side_length - 1)
     
+    spin_out = self.Array[x][y]
+    
     #to_print = [x, y]
     #print to_print
-    spin_out = self.Array[x][y]
+    
     return spin_out
   
-  def GetEnergy(U):
+  def GetEnergy(spin):
     global P
     #Sum over nearest neighbours
+    spin_sum = sum(spin) - spin[0]
+    
+    #Get energy
+    energy = P.J * spin[0] * spin_sum
+    print spin
+    print energy
+    return energy
     
     
     
