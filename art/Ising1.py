@@ -21,6 +21,8 @@ class Lattice:
   
   def MetropolisAlg(self):
     #Create pair of randoms
+    z = 1
+    print z
   
 class Params:
   def __init__(self, L, M0, J, T, B, colour1, colour2):
