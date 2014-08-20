@@ -19,6 +19,9 @@ class Lattice:
     M = float(M)/self.N
     return M
   
+  def MetropolisAlg(self):
+    #Create pair of randoms
+  
 class Params:
   def __init__(self, L, M0, J, T, B, colour1, colour2):
     self.L = L
@@ -106,4 +109,5 @@ S = Lattice(P.L, P.M0)
 print_magnetisation(S)
 print_params(P)
 draw_lattice(S)
-
+z = random(1,5)
+print z
