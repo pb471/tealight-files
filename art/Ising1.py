@@ -127,7 +127,7 @@ def clear_screen():
 def draw_lattice(s):
   global P
   initial_offset = [30,30]
-  square_size = [40,40]
+  square_size = [600/s.side_length,600/s.side_length]
   for i in range(0, s.side_length):
     for j in range(0, s.side_length):
       if(s.Array[i][j] == 1):
