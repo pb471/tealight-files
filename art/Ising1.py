@@ -3,6 +3,7 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 from tealight.art import (screen_width, screen_height)
 from random import random
 from random import randint
+from math import exp
 
 #################
 #Classdefs
@@ -34,6 +35,10 @@ class Lattice:
     self.Array[x][y] = -self.Array[x][y]
     spin[0] = -spin[0]
     energy_after = self.GetEnergy(spin)
+    
+    #Test against Boltzmann
+    energy_change = energy_after - energy_before
+    r = random()
     
     #co_ords = [x, y]
     #print co_ords
