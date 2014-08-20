@@ -73,7 +73,7 @@ def print_magnetisation(s):
   text(600,600, t)
 
 #Neatly print parameters
-def print_params(P)
+def print_params(P):
   color("black")
   t[1] = str(P.J)
   t[2] = str(P.T)
