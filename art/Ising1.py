@@ -165,14 +165,12 @@ def print_params(P):
   
   
 #Test frame event
-def handle_keydown(a):
-  global P
-  clear_screen()
-  for i in range(0,P.MetSteps):
-    s.MetropolisAlg()
-  draw_lattice(s)
-  print_params(P)
-  print_magnetisation(s)
+def handle_keydown(key):
+  if key == "q":
+    P.T = P.T + 0.1
+  if key == "a":
+     P.T = P.T - 0.1
+  
   
 def handle_frame():
   global P
