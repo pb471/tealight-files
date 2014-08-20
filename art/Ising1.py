@@ -76,10 +76,7 @@ class Lattice:
     print spin
     print energy
     return energy
-    
-    
-    
-  
+     
 class Params:
   def __init__(self, L, M0, J, T, B, colour1, colour2):
     self.L = L
