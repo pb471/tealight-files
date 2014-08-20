@@ -117,7 +117,7 @@ class Graph:
     color("black")
     box(self.x, self.y, self.x_width, self.y_width)
   
-  def AddPoint(self, px, py)
+  def AddPoint(self, px, py):
     print px
         
 
