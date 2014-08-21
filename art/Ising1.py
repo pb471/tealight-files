@@ -350,7 +350,7 @@ def handle_frame():
   
 #####################
 #Main
-Colour1 = [0, 0, 125, 1]
+Colour1 = [0, 0, 225, 1]
 Colour2 = [0, 125, 0, 1]
 
 ColourString1 = coltostr(Colour1)
