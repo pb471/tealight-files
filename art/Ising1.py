@@ -16,6 +16,7 @@ class Lattice:
     self.N = side_length*side_length
     self.spins_changed = 0
     self.render_spins_changed = create_matrix(P.L, 3)
+    print self.render_spins_changed
   def Magnetisation(self):
     M = 0
     for i in range(0, self.side_length):
@@ -78,7 +79,7 @@ class Lattice:
       self.Array[x][y] = -self.Array[x][y]
       
     if old_spin != self.Array[x][y]:
-      self.
+      a = 1
   
   #Returns a vector of 5 spins: a spin and its nearest neighbours
   def GetSpins(self, x, y):
