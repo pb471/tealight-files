@@ -165,9 +165,13 @@ class Graph:
     
   
   def AddPoint(self, px, py):
+    #Get fractional co-ords
     frac_px = float(px)/self.x_lim[1]
+    frac_py = float(py)/self.y_lim[1]
     
-    print frac_px
+    #Convert to pixels
+    pixel_x = self.pos[0] + 0.5(1+frac_px)*self.width[0]
+    print pixel_x
         
 
 ################
