@@ -158,7 +158,7 @@ class Graph:
     
   def Clear(self):
     color("black")
-    box(self.x, self.y, self.x_width, self.y_width)
+    box(self.pos[0], self.pos[1], self.width[0], self.width[1])
     
   def AddPoint(self, px, py):
     col = [255, 0, 0, 0.5]
