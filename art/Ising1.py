@@ -315,6 +315,7 @@ def handle_keyup(key):
     
   
 def handle_frame():
+  frame_count = frame_count + 1
   global P
   #sleep(P.SleepTime)
   clear_values()
@@ -338,6 +339,8 @@ def handle_frame():
   draw_mag_square(ColourString1, ColourString2, s.Magnetisation())
   
   G.AddPoint(P.T, s.Magnetisation(), P.B )
+  if(frame_count % 30):
+    draw_lattice(s)
   
   
 #####################
@@ -371,3 +374,4 @@ draw_lattice(s)
 draw_letters()
 keys = {"q" : 0, "a" : 0, "w" : 0, "s" : 0}
 toggle_keys = {"e" : 0, "d" : 0}
+frame_count = 0
