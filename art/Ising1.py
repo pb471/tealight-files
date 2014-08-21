@@ -287,7 +287,7 @@ def handle_frame():
   if keys["s"] == 1:
     P.B = P.B - 0.05
   
-  for i in range(0,1):
+  for i in range(0,P.MetSteps):
     s.MetropolisAlg2()
   print_params(P)
   print_magnetisation(s)
