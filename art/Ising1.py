@@ -236,10 +236,7 @@ def draw_spins(render_spin_changed, N):
 #Neatly print magnetisation
 def print_magnetisation(s):
   color("black")
-  #r = "M: %.2f " % s.Magnetisation()
-  r = "M:" % s.Magnetisation()
   t = "%.2f" % s.Magnetisation()
-  text(660,30, r)
   text(690,30, t)
 
 #Neatly print parameters
@@ -249,11 +246,17 @@ def print_params(P):
   t[0] = str(P.J)
   t[1] = str(P.T)
   t[2] = str(P.B)
-  r = ["J:", "T:", "B:"]
   
   for i in range(0,3):
-    text(660, 50 + i * 20, r[i])
     text(690, 50 + i * 20, t[i])
+    
+def drawletters():
+  color("black")
+  r = ["M:" "J": "T:" "B:"]
+  for i in range(0,4):
+    text(660, 50 + i * 20, r[i])
+  
+  
   
   
 #Handle keypresses
@@ -305,4 +308,5 @@ G.Clear()
 print_magnetisation(s)
 print_params(P)
 draw_lattice(s)
+draw_letters()
 keys = {"q" : 0, "a" : 0, "w" : 0, "s" : 0}
