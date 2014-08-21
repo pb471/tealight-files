@@ -317,6 +317,7 @@ def handle_keyup(key):
 def handle_frame():
   global frame_count
   frame_count = frame_count + 1
+  print frame_count
   global P
   #sleep(P.SleepTime)
   clear_values()
