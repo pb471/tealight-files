@@ -13,6 +13,7 @@ class Lattice:
     self.Array = create_Ising_matrix(side_length, magnetisation)
     self.side_length = side_length
     self.N = side_length*side_length
+    self.spins_changed = 0
     
   def Magnetisation(self):
     M = 0
@@ -76,7 +77,7 @@ class Lattice:
       self.Array[x][y] = -self.Array[x][y]
       
     if old_spin != self.Array[x][y]:
-      a = 1
+      self.spins_changed = 
   
   #Returns a vector of 5 spins: a spin and its nearest neighbours
   def GetSpins(self, x, y):
