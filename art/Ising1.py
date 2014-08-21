@@ -218,6 +218,8 @@ def draw_lattice(s):
       #text(i*square_size[0] + initial_offset[0], 
           #j*square_size[1] +  initial_offset[1],
           #t)
+          
+#Draw the changed spins
 def draw_spins(render_spin_changed, N):
   global P
   initial_offset = [30,30]
@@ -232,6 +234,13 @@ def draw_spins(render_spin_changed, N):
           render_spin_changed[i][1]*square_size[1] +  initial_offset[1], 
           square_size[0]-1, 
           square_size[0]-1)
+
+#Draw a square showing the lattice's magnetisation    
+def draw_mag_square(col1, col2, M):
+  pos = [630, 20]
+  size = [50,50]
+  colour("black")
+  box(pos[0], pos[1], size[0], size[1])
       
 #Neatly print magnetisation
 def print_magnetisation(s):
@@ -264,9 +273,6 @@ def coltostr(col):
   string_out = string_out + str(col[3]) + ")"
   return string_out
   
-  
-  
-  
 #Handle keypresses
 def handle_keydown(key):
   keys[key] = 1
@@ -291,6 +297,7 @@ def handle_frame():
     s.MetropolisAlg2()
   print_params(P)
   print_magnetisation(s)
+  draw_mag_square(Colour1, Colour2, s.Magnetisation)
   
   #G.AddPoint(P.T, s.Magnetisation() )
   
