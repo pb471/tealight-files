@@ -237,8 +237,8 @@ def draw_spins(render_spin_changed, N):
 
 #Draw a square showing the lattice's magnetisation    
 def draw_mag_square(col1, col2, M):
-  pos = [630, 20]
-  size = [50,50]
+  pos = [630, 110]
+  size = [80,80]
   color("black")
   box(pos[0], pos[1], size[0], size[1])
       
