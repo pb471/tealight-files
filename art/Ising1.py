@@ -75,7 +75,7 @@ class Lattice:
     if r < boltzmann_value:
       self.Array[x][y] = -self.Array[x][y]
       
-    if old_spin != self.Array[x][y]
+    if old_spin != self.Array[x][y]:
   
   #Returns a vector of 5 spins: a spin and its nearest neighbours
   def GetSpins(self, x, y):
