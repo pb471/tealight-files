@@ -192,7 +192,7 @@ def create_matrix(i_size, j_size):
 
 #Wipe screen
 def clear_screen():
-  color("blue")
+  color("white")
   box(20,635,screen_width,50)
 
 #Draw the array of a lattice object
@@ -285,7 +285,7 @@ P = Params(25, #Side length
            -1, #J
            2, #T
            0, #Field
-           20, #Metropolis steps per key press
+           5, #Metropolis steps per key press
            20, #Sleep time
            "purple", #spin-up colour
            "pink") #spin-down colour
