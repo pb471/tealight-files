@@ -191,7 +191,7 @@ def create_matrix(i_size, j_size):
   return Matrix
 
 #Wipe screen
-def clear_screen():
+def CLLlear_screen():
   color("white")
   box(0,0,screen_width,690)
 
