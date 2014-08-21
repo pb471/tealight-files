@@ -239,7 +239,7 @@ def draw_spins(render_spin_changed, N):
 def draw_mag_square(col1, col2, M):
   pos = [600, 200]
   size = [100,150]
-  color("blue")
+  color("white")
   box(pos[0], pos[1], size[0]+30, size[1])
   f_up = 0.5*(M+1)
   f_down = 1 - f_up
