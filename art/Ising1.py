@@ -340,7 +340,7 @@ P = Params(30, #Side length
            -1, #J
            2, #T
            0, #Field
-           50, #Metropolis steps per key press
+           100, #Metropolis steps per key press
            10, #Sleep time
            ColourString1, #spin-up colour as string
            ColourString2) #spin-down colour as string
