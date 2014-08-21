@@ -237,7 +237,7 @@ def draw_spins(render_spin_changed, N):
 def print_magnetisation(s):
   color("black")
   t = "Magnetisation: %.2f " % s.Magnetisation()
-  text(30,640, t)
+  text(660,640, t)
 
 #Neatly print parameters
 def print_params(P):
