@@ -246,8 +246,11 @@ def print_params(P):
   t[0] = str(P.J)
   t[1] = str(P.T)
   t[2] = str(P.B)
-  to_print = "J = " + t[0] + " T = " + t[1] + " B = " + t[2]
-  text(30,660, to_print)
+  r = ["J:", "T:", "B:"]
+  
+  for i in range(0,3):
+    text(660, 60 + i * 10, r[i])
+    text(680, 60 + i * 10, r[i])
   
   
 #Handle keypresses
