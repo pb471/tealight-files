@@ -242,7 +242,7 @@ def draw_mag_square(col1, col2, M):
   f_up = 0.5*(M+1)
   f_down = 1 - f_up
   
-  colour(col1)
+  color(col1)
   box(pos[0], pos[1], size[0], size[1]*f_up) 
       
 #Neatly print magnetisation
