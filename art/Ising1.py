@@ -179,7 +179,7 @@ class Graph:
     pixel_x = self.pos[0] + 0.5*(1.0+frac_px)*self.width[0]
     pixel_y = self.pos[1] + 0.5*(1.0+frac_py)*self.width[1]
     
-    coloffset_z = 10
+    coloffset_z = 40
     col = [255-int(abs(pz)*coloffset_z), 0 + int(abs(pz)*coloffset_z), 0, 0.1]
     color(coltostr(col))
     print(coltostr(col))
