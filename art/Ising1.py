@@ -287,6 +287,8 @@ def handle_keydown(key):
     
 def handle_keyup(key):
   keys[key] = 0
+  if key == "e"
+    keys[key] = 1
   
 def handle_frame():
   global P
@@ -300,6 +302,10 @@ def handle_frame():
     P.B = P.B + 0.05
   if keys["s"] == 1:
     P.B = P.B - 0.05
+  if keys["e"] == 1:
+    P.T = P.T + 0.02
+  if keys["d"] == 1:
+    P.T = P.T - 0.02
   
   for i in range(0,P.MetSteps):
     s.MetropolisAlg2()
@@ -338,4 +344,4 @@ print_magnetisation(s)
 print_params(P)
 draw_lattice(s)
 draw_letters()
-keys = {"q" : 0, "a" : 0, "w" : 0, "s" : 0}
+keys = {"q" : 0, "a" : 0, "w" : 0, "s" : 0, "e" : 0, "d" : 0}
