@@ -170,7 +170,7 @@ class Graph:
     col = [255, 0, 0, 0.5]
     
   
-  def AddPoint(self, px, py):
+  def AddPoint(self, px, py, pz):
     #Get fractional co-ords
     frac_px = float(px)/self.x_lim[1]
     frac_py = float(py)/self.y_lim[1]
@@ -179,7 +179,9 @@ class Graph:
     pixel_x = self.pos[0] + 0.5*(1.0+frac_px)*self.width[0]
     pixel_y = self.pos[1] + 0.5*(1.0+frac_py)*self.width[1]
     
-    color("rgba(255,0,0,0.1)")
+    coloffset_z = 30
+    col = [255-abs(pz)*coloffset_z, 0 + abs(pz)*coloffset_z, 0, 0.1)
+    color(coltostr(col))
     spot(pixel_x, pixel_y, 3)
         
 
@@ -334,7 +336,7 @@ def handle_frame():
   print_magnetisation(s)
   draw_mag_square(ColourString1, ColourString2, s.Magnetisation())
   
-  G.AddPoint(P.T, s.Magnetisation() )
+  G.AddPoint(P.T, s.Magnetisation(), P.B )
   
   
 #####################
