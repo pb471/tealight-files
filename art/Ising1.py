@@ -303,9 +303,9 @@ def handle_frame():
   if keys["s"] == 1:
     P.B = P.B - 0.05
   if keys["e"] == 1:
-    P.T = P.T + 0.02
+    P.T = P.T + 0.002
   if keys["d"] == 1:
-    P.T = P.T - 0.02
+    P.T = P.T - 0.002
   
   for i in range(0,P.MetSteps):
     s.MetropolisAlg2()
