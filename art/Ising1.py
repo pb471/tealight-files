@@ -250,7 +250,7 @@ def print_params(P):
   for i in range(0,3):
     text(690, 50 + i * 20, t[i])
     
-def drawletters():
+def draw_letters():
   color("black")
   r = ["M:", "J:", "T:", "B:"]
   for i in range(0,4):
