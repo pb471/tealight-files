@@ -317,7 +317,7 @@ def handle_frame():
   print_magnetisation(s)
   draw_mag_square(ColourString1, ColourString2, s.Magnetisation())
   
-  G.AddPoint(P.T, s.Magnetisation() )
+  #G.AddPoint(P.T, s.Magnetisation() )
   
   
 #####################
