@@ -239,6 +239,7 @@ def draw_spins(render_spin_changed, N):
 def draw_mag_square(col1, col2, M):
   pos = [630, 200]
   size = [80,80]
+  print M
   alpha1 = 0.5*(M+1)
   alpha2 = 1-alpha1
   rgba = [col1[0], col1[1], col1[2], alpha1]
