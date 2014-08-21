@@ -287,7 +287,7 @@ def handle_frame():
   if keys["s"] == 1:
     P.B = P.B - 0.05
   
-  for i in range(0,P.MetSteps):
+  for i in range(0,1):
     s.MetropolisAlg2()
   print_params(P)
   print_magnetisation(s)
@@ -310,8 +310,8 @@ P = Params(20, #Side length
            0, #Field
            5, #Metropolis steps per key press
            1, #Sleep time
-           ColourString1, #spin-up colour
-           ColourString2) #spin-down colour
+           ColourString1, #spin-up colour as string
+           ColourString2) #spin-down colour as string
 s = Lattice(P.L, P.M0)
 G = Graph(30, 540, #graph location
           320, 320, #graph size
