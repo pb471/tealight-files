@@ -255,6 +255,13 @@ def draw_letters():
   r = ["M:", "J:", "T:", "B:"]
   for i in range(0,4):
     text(660, 50 + i * 20, r[i])
+    
+#Convert rgba vector to string
+def coltostr(col):
+  string_out = "rgba("
+  for i in range(0,4):
+    string_out = string_out + str(col[i]) + ","
+  print string_out
   
   
   
@@ -265,7 +272,6 @@ def handle_keydown(key):
     
 def handle_keyup(key):
   keys[key] = 0
-  
   
 def handle_frame():
   global P
@@ -290,7 +296,10 @@ def handle_frame():
   
 #####################
 #Main
+Colour1 = [255, 0, 0, 1]
+Colour2 = [255, 0, 0, 1]
 
+ColourString1 = coltostr(Colour1)
 
 
 
