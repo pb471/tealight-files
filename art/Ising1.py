@@ -209,8 +209,8 @@ def draw_lattice(s):
       #Draw boxes
       box(i*square_size[0] + initial_offset[0], 
           j*square_size[1] +  initial_offset[1], 
-          square_size[0]-1, 
-          square_size[0]-1)
+          square_size[0]-0, 
+          square_size[0]-0)
       
       #Print co-ords and spin
       #color("black")
@@ -230,8 +230,8 @@ def draw_spins(render_spin_changed, N):
     #Draw boxes
     box(render_spin_changed[i][0]*square_size[0] + initial_offset[0], 
           render_spin_changed[i][1]*square_size[1] +  initial_offset[1], 
-          square_size[0]-1, 
-          square_size[0]-1)
+          square_size[0]-0, 
+          square_size[0]-0)
       
 #Neatly print magnetisation
 def print_magnetisation(s):
