@@ -173,8 +173,8 @@ class Graph:
     pixel_x = self.pos[0] + 0.5*(1.0+frac_px)*self.width[0]
     pixel_y = self.pos[1] + 0.5*(1.0+frac_py)*self.width[1]
     
-    color("rgba(255,0,0,0.3)")
-    circle(pixel_x, pixel_y, 3)
+    color("rgba(255,0,0,0.1)")
+    spot(pixel_x, pixel_y, 3)
         
 
 ################
