@@ -259,8 +259,9 @@ def draw_letters():
 #Convert rgba vector to string
 def coltostr(col):
   string_out = "rgba("
-  for i in range(0,4):
+  for i in range(0,3):
     string_out = string_out + str(col[i]) + ","
+  string_out = string_out + str(col[3]) + ")"
   print string_out
   
   
