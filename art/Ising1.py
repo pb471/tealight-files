@@ -294,12 +294,10 @@ def coltostr(col):
 #Handle keypresses
 def handle_keydown(key):
   keys[key] = 1
-  if key == "e" and keys[key] == 1:
-    keys[key] = 0
+
     
 def handle_keyup(key):
-  if keys[key] != "e":
-    keys[key] = 0
+  keys[key] = 0
     
   
 def handle_frame():
