@@ -199,7 +199,7 @@ def clear_values():
 def draw_lattice(s):
   global P
   initial_offset = [30,30]
-  square_size = [600/s.side_length,600/s.side_length]
+  square_size = [400/s.side_length,400/s.side_length]
   for i in range(0, s.side_length):
     for j in range(0, s.side_length):
       if(s.Array[i][j] == 1):
@@ -221,7 +221,7 @@ def draw_lattice(s):
 def draw_spins(render_spin_changed, N):
   global P
   initial_offset = [30,30]
-  square_size = [600/s.side_length,600/s.side_length]
+  square_size = [400/s.side_length,400/s.side_length]
   for i in range(0, N):
     if(render_spin_changed[i][2] == 1):
       color(P.UpColour)
