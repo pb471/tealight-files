@@ -300,7 +300,7 @@ P = Params(35, #Side length
            "blue", #spin-up colour
            "green") #spin-down colour
 s = Lattice(P.L, P.M0)
-G = Graph(30, 510, #graph location
+G = Graph(30, 520, #graph location
           400, 400, #graph size
           10, 1, #max px and py values
           5, #Point size
