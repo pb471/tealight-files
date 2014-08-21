@@ -164,6 +164,7 @@ class Graph:
   def DrawCanvas(self):
     color("black")
     box(self.pos[0], self.pos[1], self.width[0], 2)
+    box(self.pos[0], self.pos[1]+self.width[1], self.width[0], 2)
     
   def AddPoint(self, px, py):
     col = [255, 0, 0, 0.5]
