@@ -348,8 +348,6 @@ def handle_frame():
     draw_lattice(s)
   
 
-  
-  
 #####################
 #Main
 Colour1 = [0, 0, 225, 1]
