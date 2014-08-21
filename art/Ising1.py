@@ -250,7 +250,7 @@ def print_params(P):
   
   for i in range(0,3):
     text(660, 60 + i * 20, r[i])
-    text(680, 60 + i * 20, r[i])
+    text(680, 60 + i * 20, t[i])
   
   
 #Handle keypresses
