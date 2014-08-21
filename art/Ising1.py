@@ -77,7 +77,7 @@ class Lattice:
       self.Array[x][y] = -self.Array[x][y]
       
     if old_spin != self.Array[x][y]:
-      self.spins_changed = 
+      a =1
   
   #Returns a vector of 5 spins: a spin and its nearest neighbours
   def GetSpins(self, x, y):
