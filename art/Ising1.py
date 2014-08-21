@@ -261,7 +261,7 @@ def handle_keyup(key):
 def handle_frame():
   global P
   sleep(P.SleepTime)
-  #clear_screen()
+  clear_screen()
   if keys["q"] == 1:
     P.T = P.T + 0.1
   if keys["a"] == 1:
