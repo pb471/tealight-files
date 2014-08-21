@@ -191,9 +191,9 @@ def create_matrix(i_size, j_size):
   return Matrix
 
 #Wipe screen
-def clear_screen():
-  color("white")
-  box(20,635,screen_width,50)
+def clear_values():
+  color("blue")
+  box(690,30,50,50)
 
 #Draw the array of a lattice object
 def draw_lattice(s):
@@ -270,7 +270,7 @@ def handle_keyup(key):
 def handle_frame():
   global P
   sleep(P.SleepTime)
-  clear_screen()
+  clear_values()
   if keys["q"] == 1:
     P.T = P.T + 0.1
   if keys["a"] == 1:
