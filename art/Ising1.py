@@ -298,7 +298,7 @@ def handle_frame():
 #####################
 #Main
 Colour1 = [255, 0, 0, 1]
-Colour2 = [255, 0, 0, 1]
+Colour2 = [125, 125, 0, 1]
 
 ColourString1 = coltostr(Colour1)
 ColourString2 = coltostr(Colour2)
