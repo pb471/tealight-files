@@ -300,7 +300,7 @@ def handle_keyup(key):
   keys[key] = 0
   if toggle_keys[key] == 0:
     toggle_keys[key] = 1
-   elif toggle_keys[key] == 1:
+  elif toggle_keys[key] == 1:
     toggle_keys[key] = 0
 
     
