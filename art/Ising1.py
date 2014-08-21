@@ -160,7 +160,7 @@ class Graph:
     color("black")
     box(self.x, self.y, self.x_width, self.y_width)
     
-  def AddPoint(self, px, py)
+  def AddPoint(self, px, py):
     col = [255, 0, 0, 0.5]
     
   
