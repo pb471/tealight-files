@@ -287,7 +287,7 @@ def handle_keydown(key):
     
 def handle_keyup(key):
   keys[key] = 0
-  if key == "e"
+  if key == "e":
     keys[key] = 1
   
 def handle_frame():
