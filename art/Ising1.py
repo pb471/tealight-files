@@ -302,7 +302,7 @@ def handle_frame():
     s.MetropolisAlg2()
   print_params(P)
   print_magnetisation(s)
-  draw_mag_square(Colour1, Colour2, s.Magnetisation)
+  draw_mag_square(Colour1, Colour2, s.Magnetisation())
   
   #G.AddPoint(P.T, s.Magnetisation() )
   
