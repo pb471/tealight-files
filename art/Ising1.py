@@ -182,7 +182,6 @@ class Graph:
     coloffset_z = 40
     col = [255-int(abs(pz)*coloffset_z), 0,0 + int(abs(pz)*coloffset_z), 0.1]
     color(coltostr(col))
-    print(coltostr(col))
     spot(pixel_x, pixel_y, 3)
         
 
