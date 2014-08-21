@@ -249,8 +249,8 @@ def print_params(P):
   r = ["J:", "T:", "B:"]
   
   for i in range(0,3):
-    text(660, 60 + i * 10, r[i])
-    text(680, 60 + i * 10, r[i])
+    text(660, 60 + i * 20, r[i])
+    text(680, 60 + i * 20, r[i])
   
   
 #Handle keypresses
