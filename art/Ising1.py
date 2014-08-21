@@ -83,7 +83,7 @@ class Lattice:
       self.render_spins_changed[self.spins_changed][2] = self.Array[x][y]
       self.spins_changed = self.spins_changed + 1
     
-    if self.spins_changed = P.MetSteps:
+    if self.spins_changed == P.MetSteps:
       print self.render_spins_changed
       self.spins_changed = 0
       self.render_spins_changed = create_matrix(P.MetSteps, 3)
