@@ -16,7 +16,7 @@ class Lattice:
     self.N = side_length*side_length
     self.spins_changed = 0
     self.render_spins_changed = create_matrix(P.L, 3)
-    print self.render_spins_changed
+    print self.render_spins_changed[3][3]
   def Magnetisation(self):
     M = 0
     for i in range(0, self.side_length):
@@ -178,7 +178,7 @@ def create_matrix(i_size, j_size):
   Matrix = [[0 for x in xrange(j_size)] for x in xrange(i_size)]
   for i in range(0, i_size):
     for j in range(0, j_size):
-      Matrix[i][j] = 10*j+i
+      Matrix[i][j] = 0
   return Matrix
 
 #Wipe screen
