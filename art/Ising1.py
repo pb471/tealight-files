@@ -176,8 +176,8 @@ def create_Ising_matrix(size, magnetisation):
 #Create a general matrix
 def create_matrix(i_size, j_size):
   Matrix = [[0 for x in xrange(i_size)] for x in xrange(j_size)]
-  for i in range(0, i_size):
-    for j in range(0, j_size):
+  for i in range(0, j_size):
+    for j in range(0, i_size):
       print j
       Matrix[i][j] = 0
   return Matrix
