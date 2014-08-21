@@ -80,7 +80,7 @@ class Lattice:
     if old_spin != self.Array[x][y]:
       self.render_spins_changed[self.spins_changed][0] = x
       self.render_spins_changed[self.spins_changed][1] = y
-      self.render_spins_changed[self.spins_changed][1] = y
+      self.render_spins_changed[self.spins_changed][2] = self.Array[x][y]
       self.spins_changed = self.spins_changed + 1
     
     if self.spins_changed > P.MetSteps:
