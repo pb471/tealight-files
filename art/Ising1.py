@@ -272,13 +272,13 @@ def handle_frame():
   sleep(P.SleepTime)
   clear_values()
   if keys["q"] == 1:
-    P.T = P.T + 0.1
+    P.T = P.T + 0.05
   if keys["a"] == 1:
-    P.T = P.T - 0.1
+    P.T = P.T - 0.05
   if keys["w"] == 1:
-    P.B = P.B + 0.1
+    P.B = P.B + 0.05
   if keys["s"] == 1:
-    P.B = P.B - 0.1
+    P.B = P.B - 0.05
   
   for i in range(0,P.MetSteps):
     s.MetropolisAlg2()
