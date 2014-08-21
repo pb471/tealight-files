@@ -170,7 +170,7 @@ class Graph:
     frac_py = float(py)/self.y_lim[1]
     
     #Convert to pixels
-    pixel_x = self.pos[0] #+ 0.5(1.0+frac_px)*float(self.width[0])
+    pixel_x = self.pos[0] + 0.5(1.0+frac_px)#*float(self.width[0])
     print pixel_x
         
 
