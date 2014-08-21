@@ -10,11 +10,12 @@ from tealight.utils import sleep
 #Classdefs
 class Lattice:
   def __init__(self, side_length, magnetisation):
+    global P
     self.Array = create_Ising_matrix(side_length, magnetisation)
     self.side_length = side_length
     self.N = side_length*side_length
     self.spins_changed = 0
-    
+    self.render_spins_changed = create_matrix(P.L, 3)
   def Magnetisation(self):
     M = 0
     for i in range(0, self.side_length):
@@ -77,7 +78,7 @@ class Lattice:
       self.Array[x][y] = -self.Array[x][y]
       
     if old_spin != self.Array[x][y]:
-      a =1
+      self.
   
   #Returns a vector of 5 spins: a spin and its nearest neighbours
   def GetSpins(self, x, y):
@@ -159,7 +160,7 @@ class Graph:
 ################
 #Function definitions
 
-#Create a square matrix
+#Create a square Ising matrix
 def create_Ising_matrix(size, magnetisation):
   Matrix = [[0 for x in xrange(size)] for x in xrange(size)]
   for i in range(0, size):
@@ -169,6 +170,14 @@ def create_Ising_matrix(size, magnetisation):
         Matrix[i][j] = 1
       else:
         Matrix[i][j] = -1
+  return Matrix
+
+#Create a general matrix
+def create_matrix(i_size, j_size):
+  Matrix = [[0 for x in xrange(i_size)] for x in xrange(j_size)]
+  for i in range(0, size):
+    for j in range(0, size):
+      Matrix[i][j] = 0
   return Matrix
 
 #Wipe screen
