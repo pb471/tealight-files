@@ -240,6 +240,7 @@ def draw_mag_square(col1, col2, M):
   pos = [630, 200]
   size = [80,80]
   color("black")
+  print col1
   box(pos[0], pos[1], size[0], size[1])
       
 #Neatly print magnetisation
