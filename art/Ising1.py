@@ -252,7 +252,7 @@ def print_params(P):
     
 def drawletters():
   color("black")
-  r = ["M:" "J": "T:" "B:"]
+  r = ["M:", "J:", "T:", "B:"]
   for i in range(0,4):
     text(660, 50 + i * 20, r[i])
   
