@@ -238,23 +238,12 @@ def draw_spins(render_spin_changed, N):
 #Draw a square showing the lattice's magnetisation    
 def draw_mag_square(col1, col2, M):
   pos = [600, 200]
-  size = [150,150]
-  color("white")
-  box(pos[0], pos[1], size[0], size[1])
-  alpha1 = 0.5*(M+1)
-  alpha2 = 1-alpha1
+  size = [100,150]
+  f_up = 0.5*(M+1)
+  f_down = 1 - f_up
   
-  #Draw first box
-  rgba = [col1[0], col1[1], col1[2], alpha1]
-  colstring = coltostr(rgba)
-  color(colstring)
-  box(pos[0], pos[1], size[0], size[1])
-  
-  #draw second box
-  rgba = [col2[0], col2[1], col2[2], alpha2]
-  colstring = coltostr(rgba)
-  color(colstring)
-  box(pos[0], pos[1], size[0], size[1])
+  colour(col1)
+  box(pos[0], pos[1], size[0], size[1]*f_up) 
       
 #Neatly print magnetisation
 def print_magnetisation(s):
@@ -311,7 +300,7 @@ def handle_frame():
     s.MetropolisAlg2()
   print_params(P)
   print_magnetisation(s)
-  draw_mag_square(Colour1, Colour2, s.Magnetisation())
+  draw_mag_square(ColourString1, ColourString2, s.Magnetisation())
   
   #G.AddPoint(P.T, s.Magnetisation() )
   
