@@ -311,7 +311,7 @@ P = Params(20, #Side length
            0, #Field
            5, #Metropolis steps per key press
            1, #Sleep time
-           "blue", #spin-up colour
+           ColourString1, #spin-up colour
            "green") #spin-down colour
 s = Lattice(P.L, P.M0)
 G = Graph(30, 540, #graph location
