@@ -298,6 +298,7 @@ def handle_keydown(key):
     
 def handle_keyup(key):
   keys[key] = 0
+  toggle_keys[key] = !toggle_keys[key]
     
   
 def handle_frame():
@@ -355,4 +356,5 @@ print_magnetisation(s)
 print_params(P)
 draw_lattice(s)
 draw_letters()
-keys = {"q" : 0, "a" : 0, "w" : 0, "s" : 0, "e" : 0, "d" : 0}
+keys = {"q" : 0, "a" : 0, "w" : 0, "s" : 0}
+toggle_keys = {"e" : 0, "d" : 0}
