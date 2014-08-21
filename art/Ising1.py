@@ -248,7 +248,7 @@ def draw_mag_square(col1, col2, M):
   box(pos[0], pos[1], size[0]*0.5, size[1]*f_up)
   
   color(col2)
-  box(pos[0], pos[1]+size[0]*0.5, size[0]*0.5, size[1]*f_up) 
+  box(pos[0]++size[0]*0.5, pos[1], size[0]*0.5, size[1]*f_up) 
       
 #Neatly print magnetisation
 def print_magnetisation(s):
