@@ -165,6 +165,7 @@ class Graph:
     
   
   def AddPoint(self, px, py):
+    print px
     frac_px = float(px/(self.x_lim[1] - self.x_lim[0]))
     frac_py = float(py/(self.y_lim[1] - self.y_lim[0]))
     print frac_px
