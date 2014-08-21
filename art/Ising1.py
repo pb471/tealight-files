@@ -49,6 +49,33 @@ class Lattice:
     #print co_ords
     #print S
     #print self.Array
+    
+  #Runs the Metropolis algorithm on the spin lattice
+  #and renders graphics
+  def MetropolisAlg2(self):
+    global P
+    #Create pair of randoms
+    x = randint(0,self.side_length - 1)
+    y = randint(0, self.side_length - 1)
+    
+    #Get the spin at that site and the 4 nearest neighbours
+    spin = [0, 0, 0, 0, 0]
+    spin = self.GetSpins(x, y)
+    old_spin = spin[0]
+    
+    #Get energy, try a spin flip, get new energy
+    energy_before = self.GetEnergy(spin)
+    spin[0] = -spin[0]
+    energy_after = self.GetEnergy(spin)
+    
+    #Test against Boltzmann
+    energy_change = energy_after - energy_before
+    r = random()
+    boltzmann_value = exp(-(energy_change)/P.T)
+    if r < boltzmann_value:
+      self.Array[x][y] = -self.Array[x][y]
+      
+    if old_spin != self.Array[x][y]
   
   #Returns a vector of 5 spins: a spin and its nearest neighbours
   def GetSpins(self, x, y):
@@ -219,7 +246,7 @@ def handle_frame():
   
 #####################
 #Main
-P = Params(10, #Side length
+P = Params(25, #Side length
            1, #Fraction spin-up
            -1, #J
            2, #T
