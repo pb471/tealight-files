@@ -239,8 +239,11 @@ def draw_spins(render_spin_changed, N):
 def draw_mag_square(col1, col2, M):
   pos = [630, 200]
   size = [80,80]
-  color("black")
-  print col1
+  alpha1 = 0.5*(M+1)
+  alpha2 = 1-alpha1
+  rgba = [col1[0] col1[1] col1[2] alpha1]
+  colstring = coltostr(rgba)
+  color(colstring)
   box(pos[0], pos[1], size[0], size[1])
       
 #Neatly print magnetisation
