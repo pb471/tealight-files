@@ -289,6 +289,8 @@ def handle_keyup(key):
   keys[key] = 0
   if key == "e":
     keys[key] = 1
+  if key == "d":
+    keys[key] = 1
   
 def handle_frame():
   global P
