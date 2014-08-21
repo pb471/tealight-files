@@ -315,6 +315,7 @@ def handle_keyup(key):
     
   
 def handle_frame():
+  sleep(P.SleepTime)
   global P
   clear_values()
   if keys["q"] == 1:
