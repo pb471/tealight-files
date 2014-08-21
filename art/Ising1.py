@@ -16,7 +16,6 @@ class Lattice:
     self.N = side_length*side_length
     self.spins_changed = 0
     self.render_spins_changed = create_matrix(P.L, 3)
-    print self.render_spins_changed[8][2]
   def Magnetisation(self):
     M = 0
     for i in range(0, self.side_length):
@@ -79,7 +78,13 @@ class Lattice:
       self.Array[x][y] = -self.Array[x][y]
       
     if old_spin != self.Array[x][y]:
-      a = 1
+      self.render_spins_changed[self.spins_changed][0] = x
+      self.render_spins_changed[self.spins_changed][1] = y
+      self.spins_changed = self.spins_changed + 1
+    
+    if self.spins_changed > P.MetSteps:
+      print self.render_spins_changed
+      self.spins_changed = 0
   
   #Returns a vector of 5 spins: a spin and its nearest neighbours
   def GetSpins(self, x, y):
@@ -249,7 +254,7 @@ def handle_frame():
     P.B = P.B - 0.1
   
   for i in range(0,P.MetSteps):
-    s.MetropolisAlg()
+    s.MetropolisAlg2()
   draw_lattice(s)
   print_params(P)
   print_magnetisation(s)
