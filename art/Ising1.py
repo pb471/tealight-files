@@ -337,12 +337,15 @@ def handle_frame():
   draw_mag_square(ColourString1, ColourString2, s.Magnetisation())
   
   G.AddPoint(P.T, s.Magnetisation(), P.B )
-  if(frame_count % 30):
-    draw_lattice(s)
   
   #Needed to keep lattice up to date
   global frame_count
   frame_count = frame_count + 1
+  
+  if(frame_count % 30):
+    draw_lattice(s)
+  
+
   
   
 #####################
