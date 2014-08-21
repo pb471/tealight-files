@@ -76,15 +76,17 @@ class Lattice:
     boltzmann_value = exp(-(energy_change)/P.T)
     if r < boltzmann_value:
       self.Array[x][y] = -self.Array[x][y]
-      
+    
+    #Update spin render array
     if old_spin != self.Array[x][y]:
       self.render_spins_changed[self.spins_changed][0] = x
       self.render_spins_changed[self.spins_changed][1] = y
       self.render_spins_changed[self.spins_changed][2] = self.Array[x][y]
       self.spins_changed = self.spins_changed + 1
     
+    #If required number of steps reached, render spins
     if self.spins_changed == P.MetSteps:
-      print self.render_spins_changed
+      draw_spins(self.render_spins_changed, P.MetSteps)
       self.spins_changed = 0
       self.render_spins_changed = create_matrix(P.MetSteps, 3)
   
@@ -216,6 +218,20 @@ def draw_lattice(s):
       #text(i*square_size[0] + initial_offset[0], 
           #j*square_size[1] +  initial_offset[1],
           #t)
+def draw_spins(render_spin_changed, N):
+  global P
+  initial_offset = [30,30]
+  square_size = [600/s.side_length,600/s.side_length]
+  for i in range(0, N):
+    if(render_spin_changed[i][2] == 1):
+      color(P.UpColour)
+    else:
+      color(P.DownColour)
+    #Draw boxes
+    box(render_spin_changed[i][0]*square_size[0] + initial_offset[0], 
+          render_spin_changed[i][1]*square_size[1] +  initial_offset[1], 
+          square_size[0]-1, 
+          square_size[0]-1)
       
 #Neatly print magnetisation
 def print_magnetisation(s):
@@ -257,7 +273,6 @@ def handle_frame():
   
   for i in range(0,P.MetSteps):
     s.MetropolisAlg2()
-  draw_lattice(s)
   print_params(P)
   print_magnetisation(s)
   #G.AddPoint(P.T, s.Magnetisation() )
