@@ -243,9 +243,14 @@ def draw_mag_square(col1, col2, M):
   box(pos[0], pos[1], size[0], size[1])
   alpha1 = 0.5*(M+1)
   alpha2 = 1-alpha1
+  
+  #Draw first box
   rgba = [col1[0], col1[1], col1[2], alpha1]
   colstring = coltostr(rgba)
   color(colstring)
+  box(pos[0], pos[1], size[0], size[1])
+  
+  #draw second box
   rgba = [col2[0], col2[1], col2[2], alpha2]
   colstring = coltostr(rgba)
   color(colstring)
