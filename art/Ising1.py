@@ -160,6 +160,11 @@ class Graph:
     color("white")
     box(self.pos[0], self.pos[1], self.width[0], self.width[1])
     
+        
+  def DrawCanvas(self):
+    color("black")
+    box(self.pos[0], self.pos[1], self.width[0], 2)
+    
   def AddPoint(self, px, py):
     col = [255, 0, 0, 0.5]
     
@@ -355,7 +360,7 @@ G = Graph([30, 540], #graph location
           [-1, 1], #y-lim
           5, #Point size
           "red") #colour
-G.Clear()
+G.DrawCanvas()
 print_magnetisation(s)
 print_params(P)
 draw_lattice(s)
