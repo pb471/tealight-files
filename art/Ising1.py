@@ -180,7 +180,7 @@ class Graph:
     pixel_y = self.pos[1] + 0.5*(1.0+frac_py)*self.width[1]
     
     coloffset_z = 30
-    col = [255-abs(pz)*coloffset_z, 0 + abs(pz)*coloffset_z, 0, 0.1)
+    col = [255-abs(pz)*coloffset_z, 0 + abs(pz)*coloffset_z, 0, 0.1]
     color(coltostr(col))
     spot(pixel_x, pixel_y, 3)
         
