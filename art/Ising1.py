@@ -239,6 +239,8 @@ def draw_spins(render_spin_changed, N):
 def draw_mag_square(col1, col2, M):
   pos = [630, 200]
   size = [80,80]
+  color("white")
+  box(pos[0], pos[1], size[0], size[1])
   print M
   alpha1 = 0.5*(M+1)
   alpha2 = 1-alpha1
