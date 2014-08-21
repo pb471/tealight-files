@@ -306,10 +306,11 @@ def handle_keydown(key):
     
 def handle_keyup(key):
   keys[key] = 0
-  if toggle_keys[key] == 0:
-    toggle_keys[key] = 1
-  elif toggle_keys[key] == 1:
-    toggle_keys[key] = 0
+  if key == "e" or key == "d":
+    if toggle_keys[key] == 0:
+      toggle_keys[key] = 1
+    elif toggle_keys[key] == 1:
+      toggle_keys[key] = 0
 
     
   
