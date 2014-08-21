@@ -164,9 +164,10 @@ class Graph:
     col = [255, 0, 0, 0.5]
     
   
-  #def AddPoint(self, px, py):
-    #circle
-    
+  def AddPoint(self, px, py):
+    frac_px = (self.x_lim[1] - self.x_lim[0])*px
+    frac_py = (self.y_lim[1] - self.y_lim[0])*py
+    print frac_px
         
 
 ################
@@ -316,7 +317,7 @@ def handle_frame():
   print_magnetisation(s)
   draw_mag_square(ColourString1, ColourString2, s.Magnetisation())
   
-  #G.AddPoint(P.T, s.Magnetisation() )
+  G.AddPoint(P.T, s.Magnetisation() )
   
   
 #####################
