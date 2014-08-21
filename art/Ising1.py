@@ -193,7 +193,7 @@ def create_matrix(i_size, j_size):
 #Wipe screen
 def clear_screen():
   color("blue")
-  box(20,640,screen_width,40)
+  box(20,635,screen_width,50)
 
 #Draw the array of a lattice object
 def draw_lattice(s):
