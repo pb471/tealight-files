@@ -301,8 +301,7 @@ Colour1 = [255, 0, 0, 1]
 Colour2 = [255, 0, 0, 1]
 
 ColourString1 = coltostr(Colour1)
-
-
+ColourString2 = coltostr(Colour2)
 
 P = Params(20, #Side length
            1, #Fraction spin-up
@@ -312,7 +311,7 @@ P = Params(20, #Side length
            5, #Metropolis steps per key press
            1, #Sleep time
            ColourString1, #spin-up colour
-           "green") #spin-down colour
+           ColourString2) #spin-down colour
 s = Lattice(P.L, P.M0)
 G = Graph(30, 540, #graph location
           320, 320, #graph size
