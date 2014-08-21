@@ -298,7 +298,11 @@ def handle_keydown(key):
     
 def handle_keyup(key):
   keys[key] = 0
-  toggle_keys[key] = !toggle_keys[key]
+  if toggle_keys[key] == 0:
+    toggle_keys[key] = 1
+   elif toggle_keys[key] == 1:
+    toggle_keys[key] = 0
+
     
   
 def handle_frame():
