@@ -262,7 +262,7 @@ def coltostr(col):
   for i in range(0,3):
     string_out = string_out + str(col[i]) + ","
   string_out = string_out + str(col[3]) + ")"
-  print string_out
+  return string_out
   
   
   
