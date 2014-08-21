@@ -191,7 +191,7 @@ def create_matrix(i_size, j_size):
   return Matrix
 
 #Wipe screen
-def CLLlear_screen():
+def clear_screen():
   color("white")
   box(0,0,screen_width,690)
 
@@ -261,7 +261,7 @@ def handle_keyup(key):
 def handle_frame():
   global P
   sleep(P.SleepTime)
-  clear_screen()
+  #clear_screen()
   if keys["q"] == 1:
     P.T = P.T + 0.1
   if keys["a"] == 1:
