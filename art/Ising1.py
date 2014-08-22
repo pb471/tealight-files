@@ -356,7 +356,7 @@ Colour2 = [0, 125, 0, 1]
 ColourString1 = coltostr(Colour1)
 ColourString2 = coltostr(Colour2)
 
-P = Params(90, #Side length
+P = Params(50, #Side length
            1, #Fraction spin-up
            -1, #J
            1.5, #T
