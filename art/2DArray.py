@@ -20,7 +20,7 @@ class Array2D:
     return array
   
   #Overload indexing
-  def __getitem__(i, j, s=self):
+  def __getitem__(s=self,i, j):
     return s.array[i][j]
   
   #Set the values of the matrix to random integers
