@@ -9,7 +9,7 @@ class Array2D:
   def __init__(self, i_size, j_size, default_value = 0):
     self.i_size = i_size
     self.j_size = j_size
-    self.Array= self.create_matrix(i_size, j_size, default_value)
+    self.array= self.create_matrix(i_size, j_size, default_value)
   
   #Return an i by j matrix, all components set to default_value
   def create_matrix(self, i_size, j_size, default_value):
