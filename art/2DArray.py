@@ -40,4 +40,4 @@ M = Array2D(4,7,1)
 M.print_matrix()
 M.randomize_components(0, 3)
 M.print_matrix()
-M[1]
+print M[1]
