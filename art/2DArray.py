@@ -139,6 +139,10 @@ class Array2D:
 #Make a 10x10 array of 3s
 M = Array2D(10,10, 3)
 
+#Set its elements to 77
+M.components_constant(77)
+M.print_array()
+
 #Set its elements to random ints on [-10, 10]
 M.components_randint(-10,10)
 M.print_array()
@@ -147,9 +151,7 @@ M.print_array()
 M.components_random()
 M.print_array()
 
-#Set its elements to 77
-M.components_constant(77)
-M.print_array()
+
 
 #Print the min, max and total values
 print [M.min(), M.max(), M.sum()]
