@@ -1,6 +1,7 @@
 #Imports
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 from tealight.art import (screen_width, screen_height)
+from random import randint
 
 #Classdefs
 class Array2D:
@@ -12,13 +13,22 @@ class Array2D:
   
   #Return an i by j matrix, all components set to default_value
   def create_matrix(self, i_size, j_size, default_value):
-    Matrix = [[0 for x in xrange(j_size)] for x in xrange(i_size)]
+    array = [[0 for x in xrange(j_size)] for x in xrange(i_size)]
     for i in range(0, i_size):
       for j in range(0, j_size):
         Matrix[i][j] = default_value
-    return Matrix
+    return array
+  
+  #Set the values of the matrix to random integers
+  def randomize_components(self, lower_bound, upper_bound)
+      for i in range(0, self.i_size):
+        for j in range(0, self.j_size):
+          self.array[i][j] = randint(lower_bound, upper_bound)
+  
 
 #Main
 M = Array2D(4,3,1)
 print M.Array
 print M.Array[3][1]
+M.randomize_components(0, 3)
+print M.Array
