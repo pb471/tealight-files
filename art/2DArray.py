@@ -138,6 +138,5 @@ class Array2D:
 M = Array2D(10,10)
 M.components_randint(-10,10)
 M.print_array()
-a = M.min()
-print a
+print M.min()
 M.draw_debug([90, 90], [600, 600])
