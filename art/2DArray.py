@@ -73,7 +73,13 @@ class Array2D:
   #Draws the array on-screen as squares; colour indicates value
   #M.draw([30 30], [100 100])
   def draw(self, position = [30, 30], width = [200,200]):
-    a = 0
+    for i in range(0, i_size):
+      for j in range(0, j_size):
+        color("red")
+        box(position[0] + j * width[0]/self.j_value,
+            position[1] + i * width[1]/self.i_value,
+            width[0]/self.j_value - 1,
+            width[1]/self.i_value - 1)
     
   
   
@@ -84,3 +90,4 @@ M.components_random()
 M.print_array()
 a = M.min()
 print a
+M.draw()
