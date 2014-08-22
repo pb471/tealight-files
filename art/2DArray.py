@@ -89,12 +89,12 @@ class Array2D:
         
         #Convert to color string "rgba(...)
         if self.array[i][j] >= 0 :
-          rgba_string = coltostr([rgb_value, 0, 0, 0])
+          rgba_string = coltostr([rgb_value, 0, 0, 1])
         else:
           rgba_string = coltostr(0, 0, rgb_value, 0)
         print rgba_string
         
-        color(rgba_string)
+        color("rgba(255,1,1,1)
         box(position[0] + j * width[0]/self.j_size,
             position[1] + i * width[1]/self.i_size,
             width[0]/self.j_size - 1,
