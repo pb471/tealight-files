@@ -16,7 +16,7 @@ class Array2D:
     array = [[0 for x in xrange(j_size)] for x in xrange(i_size)]
     for i in range(0, i_size):
       for j in range(0, j_size):
-        Matrix[i][j] = default_value
+        array[i][j] = default_value
     return array
   
   #Set the values of the matrix to random integers
