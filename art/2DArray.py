@@ -27,7 +27,7 @@ class Array2D:
   
   #Neatly prints the matrix
   def print_matrix(self):
-    for i in range(0, i_size):
+    for i in range(0, self.i_size):
       print self.array[i]
   
 
