@@ -174,3 +174,7 @@ M.draw([30,30], [500,500])
 M = Array2D(3,3)
 M.components_randint(-5,5)
 M.draw_debug([30, 550], [200, 200])
+
+color("white")
+box(0,0, screen_width, screen_height)
+M = Array2D(100,100)
