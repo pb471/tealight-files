@@ -3,7 +3,7 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 from tealight.art import (screen_width, screen_height)
 
 #Classdefs
-class Matrix:
+class Array2D:
   #Constructor
   def __init__(self, i_size, j_size, default_value = 0):
     self.i_size = i_size
@@ -19,5 +19,5 @@ class Matrix:
     return Matrix
 
 #Main
-M = Matrix(3,3,1)
+M = Array2D(3,3,1)
 print M.Array
