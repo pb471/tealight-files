@@ -106,8 +106,8 @@ class Array2D:
   
 
 #Main
-M = Array2D(2,2)
-M.components_randint(-4,4)
+M = Array2D(10,10)
+M.components_randint(-10,10)
 M.print_array()
 a = M.min()
 print a
