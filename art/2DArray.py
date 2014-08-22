@@ -44,11 +44,6 @@ class Array2D:
       for i in range(0, self.i_size):
         for j in range(0, self.j_size):
           self.array[i][j] = random()
-  
-  #Neatly prints the array
-  def print_array(self):
-    for i in range(0, self.i_size):
-      print self.array[i]
       
   #Sums the array
   def sum(self):
@@ -69,6 +64,11 @@ class Array2D:
     max_value = min(self.array)
     max_value = min(max_value)
     return max_value
+  
+  #Neatly prints the array
+  def print_array(self):
+    for i in range(0, self.i_size):
+      print self.array[i]
   
   #Draws the array on-screen as squares; colour indicates value
   #M.draw([30 30], [100 100])
@@ -135,8 +135,22 @@ class Array2D:
   
 
 #Main
-M = Array2D(10,10)
+
+#Make a 10x10 array of 3s
+M = Array2D(10,10, 3)
+
+#Set its elements to random ints on [-10, 10]
 M.components_randint(-10,10)
 M.print_array()
+
+#Set its elements to random floats on [0,1]
+M.components_random()
+M.print_array()
+
+#Set its elements to 77
+M.components_constant(77)
+M.print_array()
+
+#Print the min, max and total values
 print [M.min(), M.max(), M.sum()]
 M.draw_debug([90, 90], [600, 600])
