@@ -46,7 +46,7 @@ class Array2D:
           self.array[i][j] = random()
   
   #Neatly prints the array
-  def print_matrix(self):
+  def print(self):
     for i in range(0, self.i_size):
       print self.array[i]
       
@@ -63,7 +63,7 @@ class Array2D:
 #Main
 M = Array2D(4,7,1)
 M.components_constant(3)
-M.print_matrix()
+M.print()
 p =  M[1,2]
 print p
 M[1,2] = 21
