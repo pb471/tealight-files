@@ -130,7 +130,7 @@ class Array2D:
         color("white")
         text(position[0] + j * width[0]/self.j_size,
             position[1] + i * width[1]/self.i_size,
-            i + j + self.array[i][j])
+            str(i) + str(j) + str(self.array[i][j]))
   
   
 
