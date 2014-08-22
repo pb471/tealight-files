@@ -89,7 +89,7 @@ class Array2D:
           rgba_string = coltostr([rgb_value, 0, 0, 0])
         else:
           rgba_string = coltostr(0, 0, rgb_value, 0)
-        color("red")
+        color(rgba_string)
         box(position[0] + j * width[0]/self.j_size,
             position[1] + i * width[1]/self.i_size,
             width[0]/self.j_size - 1,
