@@ -58,10 +58,13 @@ class Array2D:
         sumvalue += self.array[i][j]
     return sumvalue
   
+  def draw(self, position, width):
+    
+  
   
 
 #Main
-M = Array2D(4,4,1)
+M = Array2D(4,4)
 M.components_constant(3)
 M.print_array()
 p =  M[1,2]
