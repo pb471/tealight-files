@@ -2,6 +2,7 @@
 from tealight.art import (color, line, spot, circle, box, image, text, background)
 from tealight.art import (screen_width, screen_height)
 from random import randint
+from random import random
 
 #Classdefs
 class Array2D:
@@ -25,12 +26,24 @@ class Array2D:
 
   def __setitem__(self, index, value):
     self.array[index[0]][index[1]] = value
+    
+  #Set the values of the matrix to a constant
+  def components_constant(self, value):
+      for i in range(0, self.i_size):
+        for j in range(0, self.j_size):
+          self.array[i][j] = value
   
   #Set the values of the matrix to random integers
-  def randomize_components(self, lower_bound, upper_bound):
+  def components_randint(self, lower_bound, upper_bound):
       for i in range(0, self.i_size):
         for j in range(0, self.j_size):
           self.array[i][j] = randint(lower_bound, upper_bound)
+          
+  #Set the values of the matrix to a random float on [0,1]
+  def components_random(self):
+      for i in range(0, self.i_size):
+        for j in range(0, self.j_size):
+          self.array[i][j] = random()
   
   #Neatly prints the array
   def print_matrix(self):
@@ -58,3 +71,5 @@ p =  M[1,2]
 print p
 q = M.sum()
 print q
+M.components_random()
+M.print_matrix()
