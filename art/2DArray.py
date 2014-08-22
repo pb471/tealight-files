@@ -73,8 +73,8 @@ class Array2D:
   
 
 #Main
-M = Array2D(4,4)
+M = Array2D(2,2)
 M.components_random()
-#M.print_array()
+M.print_array()
 a = M.max()
 print a
