@@ -88,6 +88,8 @@ class Array2D:
 
         
         #Convert to color string "rgba(...)
+        #Positive values are red, negative are blue
+        #Values close to zero will be darker
         if self.array[i][j] >= 0 :
           rgb_value = 255 * self.array[i][j]/self.max()
           rgba_string = coltostr([rgb_value, 0, 0, 1])
@@ -95,6 +97,7 @@ class Array2D:
           rgb_value = 255 * self.array[i][j]/self.min()
           rgba_string = coltostr([0, 0, rgb_value, 1])
         
+        #
         color(rgba_string)
         box(position[0] + j * width[0]/self.j_size,
             position[1] + i * width[1]/self.i_size,
