@@ -94,7 +94,6 @@ class Array2D:
         else:
           rgb_value = 255 * self.array[i][j]/self.min()
           rgba_string = coltostr([0, 0, rgb_value, 1])
-        print rgba_string
         
         color(rgba_string)
         box(position[0] + j * width[0]/self.j_size,
@@ -111,4 +110,4 @@ M.components_randint(-10,10)
 M.print_array()
 a = M.min()
 print a
-M.draw([90, 90], [100, 100])
+M.draw([90, 90], [400, 400])
