@@ -21,4 +21,4 @@ class Array2D:
 #Main
 M = Array2D(4,3,1)
 print M.Array
-print M.Array[3][1]
+print M.Array[3][3]
