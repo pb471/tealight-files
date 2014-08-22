@@ -46,7 +46,7 @@ class Array2D:
           self.array[i][j] = random()
   
   #Neatly prints the array
-  def print(self):
+  def __print__(self):
     for i in range(0, self.i_size):
       print self.array[i]
       
