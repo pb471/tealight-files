@@ -20,7 +20,7 @@ class Array2D:
     return array
   
   #Overload indexing
-  def __getitem__(self, i, j):
+  def __getitem__(i, j):
     return self.array[i][j]
   
   #Set the values of the matrix to random integers
@@ -38,5 +38,5 @@ class Array2D:
 #Main
 M = Array2D(4,7,1)
 M.randomize_components(0, 3)
-p =  M[M,1,2]
+p =  M[1,2]
 print p
