@@ -175,6 +175,10 @@ M = Array2D(3,3)
 M.components_randint(-5,5)
 M.draw_debug([30, 550], [200, 200])
 
+#Nice colourmap
 color("white")
 box(0,0, screen_width, screen_height)
 M = Array2D(100,100)
+for i in range(0,100):
+  for j in range(0,100):
+    
