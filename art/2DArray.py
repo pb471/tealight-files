@@ -78,7 +78,7 @@ class Array2D:
     def coltostr(col):
       string_out = "rgba("
       for i in range(0,3):
-        string_out = string_out + str(col[i]) + ","
+        string_out = string_out + str(int(col[i])) + ","
       string_out = string_out + str(col[3]) + ")"
       return string_out
     
