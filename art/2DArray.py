@@ -101,8 +101,8 @@ class Array2D:
         color(rgba_string)
         box(position[0] + j * size[0]/self.j_size,
             position[1] + i * size[1]/self.i_size,
-            width[0]/self.j_size - 1,
-            width[1]/self.i_size - 1)
+            size[0]/self.j_size - 1,
+            size[1]/self.i_size - 1)
   
   #Draws the array on-screen as squares and prints index and value
   def draw_debug(self, position = [30, 30], size = [200,200]):
@@ -123,8 +123,8 @@ class Array2D:
         color(colour)
         box(position[0] + j * size[0]/self.j_size,
             position[1] + i * size[1]/self.i_size,
-            width[0]/self.j_size - 1,
-            width[1]/self.i_size - 1)
+            size[0]/self.j_size - 1,
+            size[1]/self.i_size - 1)
         
         #Draw text
         color("white")
