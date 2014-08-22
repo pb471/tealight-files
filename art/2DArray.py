@@ -65,11 +65,5 @@ M = Array2D(4,7,1)
 M.components_constant(3)
 M.print_array()
 p =  M[1,2]
-print p
-M[1,2] = 21
-p =  M[1,2]
-print p
-q = M.sum()
-print q
 M.components_random()
 M.print_array()
