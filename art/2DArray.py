@@ -20,7 +20,7 @@ class Array2D:
     return array
   
   #Set the values of the matrix to random integers
-  def randomize_components(self, lower_bound, upper_bound)
+  def randomize_components(self, lower_bound, upper_bound):
       for i in range(0, self.i_size):
         for j in range(0, self.j_size):
           self.array[i][j] = randint(lower_bound, upper_bound)
