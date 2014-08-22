@@ -33,8 +33,6 @@ class Array2D:
 
 #Main
 M = Array2D(4,7,1)
-print M.array
-print M.array[3][1]
+M.print_matrix()
 M.randomize_components(0, 3)
-print M.array
 M.print_matrix()
