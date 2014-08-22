@@ -38,5 +38,5 @@ class Array2D:
 #Main
 M = Array2D(4,7,1)
 M.randomize_components(0, 3)
-p =  M[1,2]
+p =  M[self,1,2]
 print p
