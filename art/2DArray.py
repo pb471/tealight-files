@@ -20,3 +20,4 @@ class TwoDArray:
 
 #Main
 M = TwoDArray(3,3,1)
+print M
