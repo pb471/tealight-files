@@ -13,8 +13,8 @@ class TwoDArray:
   #Return an i by j matrix, all components set to default_value
   def create_matrix(self, i_size, j_size, default_value):
     Matrix = [[0 for x in xrange(j_size)] for x in xrange(i_size)]
-    for i in range(0, size):
-      for j in range(0, size):
+    for i in range(0, i_size):
+      for j in range(0, j_size):
         Matrix[i][j] = default_value
     return Matrix
 
