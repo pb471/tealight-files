@@ -138,5 +138,5 @@ class Array2D:
 M = Array2D(10,10)
 M.components_randint(-10,10)
 M.print_array()
-print [M.min() M.max() M.sum()]
+print [M.min(), M.max(), M.sum()]
 M.draw_debug([90, 90], [600, 600])
