@@ -143,18 +143,23 @@ M = Array2D(10,10, 3)
 M.components_constant(77)
 M.print_array()
 
-#Set its elements to random ints on [-10, 10]
-M.components_randint(-10,10)
-M.print_array()
-
 #Set its elements to random floats on [0,1]
 M.components_random()
 M.print_array()
 
+#Set its elements to random ints on [-10, 10]
+M.components_randint(-10,10)
+M.print_array()
+
 #Print the min, max and total values
 print [M.min(), M.max(), M.sum()]
-M.draw_debug([90, 90], [600, 600])
 
 #Draw the matrix on the screen
-#Positive values are red, negative are blue. Closer to zero is paler
+#Positive values are red, negative are blue.
+#Closer to zero is paler
 M.draw([30,30], [500,500])
+
+#Draw the matrix on the screen, and write indices and values
+#Make the width (second argument large).
+#Doesn't work well if components are floats/large numbers
+M.draw_debug([90, 90], [600, 600])
