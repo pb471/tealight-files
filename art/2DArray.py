@@ -32,10 +32,19 @@ class Array2D:
         for j in range(0, self.j_size):
           self.array[i][j] = randint(lower_bound, upper_bound)
   
-  #Neatly prints the matrix
+  #Neatly prints the array
   def print_matrix(self):
     for i in range(0, self.i_size):
       print self.array[i]
+      
+  #Sums the array
+  def sum(self)
+  sumvalue = 
+    for i in range(0, self.i_size):
+      for j in range(0, self.j_size):
+        self.array[i][j] = default_value
+    return array
+  
   
 
 #Main
@@ -47,3 +56,5 @@ print p
 M[1,2] = 21
 p =  M[1,2]
 print p
+q = sum(M.array)
+print q
