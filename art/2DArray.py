@@ -90,4 +90,4 @@ M.components_random()
 M.print_array()
 a = M.min()
 print a
-M.draw()
+M.draw([90, 90], [100, 100])
