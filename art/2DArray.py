@@ -181,5 +181,5 @@ for i in range(0,100):
   for j in range(0,100):
     M[i,j] = -100 + i + j
     
-M.draw()
+M.draw([100, 550], [200, 200])
     
