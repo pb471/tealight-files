@@ -156,10 +156,12 @@ print [M.min(), M.max(), M.sum()]
 
 #Draw the matrix on the screen
 #Positive values are red, negative are blue.
-#Closer to zero is paler
+#Closer to zero is pal
 M.draw([30,30], [500,500])
 
 #Draw the matrix on the screen, and write indices and values
 #Make the width (second argument large).
 #Doesn't work well if components are floats/large numbers
-M.draw_debug([90, 90], [600, 600])
+M = Array2d(3,3)
+M.components_randint(-5,5)
+M.draw_debug([630, 630], [100, 100])
