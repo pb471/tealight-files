@@ -93,7 +93,7 @@ class Array2D:
           rgba_string = coltostr([rgb_value, 0, 0, 1])
         else:
           rgb_value = 255 * self.array[i][j]/self.min()
-          rgba_string = coltostr([0, 0, rgb_value, 0])
+          rgba_string = coltostr([0, 0, rgb_value, 1])
         print rgba_string
         
         color(rgba_string)
