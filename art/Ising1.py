@@ -362,7 +362,7 @@ P = Params(90, #Side length
            1.5, #T
            0, #Field
            150, #Metropolis steps per key press
-           10, #Sleep time
+           1, #Sleep time
            ColourString1, #spin-up colour as string
            ColourString2) #spin-down colour as string
 s = Lattice(P.L, P.M0)
