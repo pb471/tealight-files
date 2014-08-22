@@ -164,4 +164,4 @@ M.draw([30,30], [500,500])
 #Doesn't work well if components are floats/large numbers
 M = Array2D(3,3)
 M.components_randint(-5,5)
-M.draw_debug([30, 500], [100, 100])
+M.draw_debug([30, 530], [100, 100])
