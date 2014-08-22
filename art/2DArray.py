@@ -19,5 +19,5 @@ class Array2D:
     return Matrix
 
 #Main
-M = Array2D(3,3,1)
+M = Array2D(4,3,1)
 print M.Array
