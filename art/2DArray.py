@@ -3,7 +3,7 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 from tealight.art import (screen_width, screen_height)
 
 #Classdefs
-class 2DArray:
+class TwoDArray:
   #Constructor
   def __init__(self, i_size, j_size, default_value = 0):
     self.i_size = i_size
@@ -19,4 +19,4 @@ class 2DArray:
     return Matrix
 
 #Main
-M = 2DArray(3,3,1)
+M = TwoDArray(3,3,1)
