@@ -76,7 +76,10 @@ class Array2D:
     for i in range(0, self.i_size):
       for j in range(0, self.j_size):
         rgb_value = 255 * self.array[i][j]/self.max()
-        print rgb_value
+        if self.array[i][j] >= 0 :
+          rgba_string = coltostr(rgb_value, 0, 0, 0)
+        else
+          rgba_string = coltostr(0, 0, rgb_value, 0)
         color("red")
         box(position[0] + j * width[0]/self.j_size,
             position[1] + i * width[1]/self.i_size,
