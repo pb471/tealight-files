@@ -357,9 +357,9 @@ ColourString1 = coltostr(Colour1)
 ColourString2 = coltostr(Colour2)
 
 P = Params(20, #Side length
-           0.5, #Fraction spin-up
+           1, #Fraction spin-up
            -1, #J
-           2, #T
+           0.5, #T
            0, #Field
            150, #Metropolis steps per key press
            10, #Sleep time
