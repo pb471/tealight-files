@@ -64,6 +64,12 @@ class Array2D:
     max_value = max(max_value)
     return max_value
   
+  #Gets the minimum value of the array
+  def max(self):
+    max_value = min(self.array)
+    max_value = min(max_value)
+    return max_value
+  
   #Draws the array on-screen as squares; colour indicates value
   #M.draw([30 30], [100 100])
   def draw(self, position = [30, 30], width = [200,200]):
@@ -76,5 +82,5 @@ class Array2D:
 M = Array2D(2,2)
 M.components_random()
 M.print_array()
-a = M.max()
+a = M.min()
 print a
