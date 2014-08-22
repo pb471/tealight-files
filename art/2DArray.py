@@ -23,6 +23,10 @@ class Array2D:
   def __getitem__(self, i, j):
     return self.array[i][j]
   
+    #Overload indexing
+  def __setitem__(self, i, j, value):
+    self.array[i][j] = value
+  
   #Set the values of the matrix to random integers
   def randomize_components(self, lower_bound, upper_bound):
       for i in range(0, self.i_size):
