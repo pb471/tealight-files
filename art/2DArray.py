@@ -97,7 +97,7 @@ class Array2D:
           rgb_value = 255 * self.array[i][j]/self.min()
           rgba_string = coltostr([0, 0, rgb_value, 1])
         
-        #
+        #Draw box
         color(rgba_string)
         box(position[0] + j * width[0]/self.j_size,
             position[1] + i * width[1]/self.i_size,
