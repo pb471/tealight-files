@@ -85,12 +85,14 @@ class Array2D:
     for i in range(0, self.i_size):
       for j in range(0, self.j_size):
         #Set rgba value based on max value
-        rgb_value = 255 * self.array[i][j]/self.max()
+
         
         #Convert to color string "rgba(...)
         if self.array[i][j] >= 0 :
+          rgb_value = 255 * self.array[i][j]/self.max()
           rgba_string = coltostr([rgb_value, 0, 0, 1])
         else:
+          rgb_value = 255 * self.array[i][j]/self.min()
           rgba_string = coltostr([0, 0, rgb_value, 0])
         print rgba_string
         
