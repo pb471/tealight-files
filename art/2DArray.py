@@ -76,8 +76,8 @@ class Array2D:
     for i in range(0, self.i_size):
       for j in range(0, self.j_size):
         color("red")
-        box(position[0] + j * width[0]/self.j_value,
-            position[1] + i * width[1]/self.i_value,
+        box(position[0] + j * width[0]/self.j_size,
+            position[1] + i * width[1]/self.i_size,
             width[0]/self.j_value - 1,
             width[1]/self.i_value - 1)
     
