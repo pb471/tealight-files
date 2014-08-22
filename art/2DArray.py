@@ -181,4 +181,5 @@ box(0,0, screen_width, screen_height)
 M = Array2D(100,100)
 for i in range(0,100):
   for j in range(0,100):
+    a=0
     
