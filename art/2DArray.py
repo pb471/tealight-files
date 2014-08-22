@@ -89,7 +89,7 @@ class Array2D:
         
         #Convert to color string "rgba(...)
         #Positive values are red, negative are blue
-        #Values close to zero will be darker
+        #Values close to zero will be paler
         if self.array[i][j] >= 0 :
           alpha_value = 1.0 * self.array[i][j]/self.max()
           rgba_string = coltostr([255, 0, 0, alpha_value])
@@ -103,7 +103,28 @@ class Array2D:
             position[1] + i * width[1]/self.i_size,
             width[0]/self.j_size - 1,
             width[1]/self.i_size - 1)
-    
+  
+  #Draws the array on-screen as squares and prints index and value
+  def draw_debug(self, position = [30, 30], width = [200,200]):
+    for i in range(0, self.i_size):
+      for j in range(0, self.j_size):
+        #Set rgba value based on max value
+
+        
+        #Convert to color string "rgba(...)
+        #Positive values are red, negative are blue
+        #Values close to zero will be paler
+        if self.array[i][j] >= 0 :
+          colour = red
+        else:
+          colour = blue
+        
+        #Draw box
+        color(colour)
+        box(position[0] + j * width[0]/self.j_size,
+            position[1] + i * width[1]/self.i_size,
+            width[0]/self.j_size - 1,
+            width[1]/self.i_size - 1)
   
   
 
@@ -113,4 +134,4 @@ M.components_randint(-10,10)
 M.print_array()
 a = M.min()
 print a
-M.draw([90, 90], [400, 400])
+M.draw_debug([90, 90], [400, 400])
