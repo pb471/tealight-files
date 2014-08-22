@@ -140,4 +140,4 @@ M.components_randint(-10,10)
 M.print_array()
 a = M.min()
 print a
-M.draw_debug([90, 90], [400, 400])
+M.draw_debug([90, 90], [600, 600])
