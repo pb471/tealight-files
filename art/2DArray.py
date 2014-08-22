@@ -162,6 +162,6 @@ M.draw([30,30], [500,500])
 #Draw the matrix on the screen, and write indices and values
 #Make the width (second argument large).
 #Doesn't work well if components are floats/large numbers
-M = Array2d(3,3)
+M = Array2D(3,3)
 M.components_randint(-5,5)
 M.draw_debug([630, 630], [100, 100])
