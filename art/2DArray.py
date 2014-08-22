@@ -115,9 +115,9 @@ class Array2D:
         #Positive values are red, negative are blue
         #Values close to zero will be paler
         if self.array[i][j] >= 0 :
-          colour = red
+          colour = "red"
         else:
-          colour = blue
+          colour = "blue"
         
         #Draw box
         color(colour)
