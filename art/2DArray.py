@@ -58,7 +58,14 @@ class Array2D:
         sumvalue += self.array[i][j]
     return sumvalue
   
-  def draw(self, position, width):
+  #Gets the maximum value of the array
+  def max(self):
+    max_value = max(self.array)
+    return max_value
+  
+  #Draws the array on-screen as squares; colour indicates value
+  #M.draw([30 30], [100 100])
+  def draw(self, position = [30, 30], width = [200,200]):
     a = 0
     
   
@@ -66,9 +73,7 @@ class Array2D:
 
 #Main
 M = Array2D(4,4)
-M.print_array()
-M.components_constant(3)
-M.print_array()
-p =  M[1,2]
 M.components_random()
 M.print_array()
+a = M.max()
+print a
