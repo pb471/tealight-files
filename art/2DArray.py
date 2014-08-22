@@ -61,6 +61,7 @@ class Array2D:
   #Gets the maximum value of the array
   def max(self):
     max_value = max(self.array)
+    max_value = max(max_value)
     return max_value
   
   #Draws the array on-screen as squares; colour indicates value
