@@ -7,7 +7,7 @@ from random import random
 #Classdefs
 class Array2D:
   #Constructor
-  def __init__(self, i_size, j_size, default_value = 0):
+  def __init__(self, i_size, j_size, default_value):
     self.i_size = i_size
     self.j_size = j_size
     self.array= self.create_matrix(i_size, j_size, default_value)
@@ -64,7 +64,7 @@ class Array2D:
   
 
 #Main
-M = Array2D(4,4)
+M = Array2D(4,4,0)
 M.components_constant(3)
 M.print_array()
 p =  M[1,2]
