@@ -151,8 +151,10 @@ M.print_array()
 M.components_random()
 M.print_array()
 
-
-
 #Print the min, max and total values
 print [M.min(), M.max(), M.sum()]
 M.draw_debug([90, 90], [600, 600])
+
+#Draw the matrix on the screen
+#Positive values are red, negative are blue. Closer to zero is paler
+M.draw([30,30], [500,500])
