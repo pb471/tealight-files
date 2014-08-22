@@ -38,7 +38,7 @@ class Array2D:
       print self.array[i]
       
   #Sums the array
-  def sum(self)
+  def sum(self):
   sumvalue = 
     for i in range(0, self.i_size):
       for j in range(0, self.j_size):
