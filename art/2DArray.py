@@ -78,8 +78,8 @@ class Array2D:
         color("red")
         box(position[0] + j * width[0]/self.j_size,
             position[1] + i * width[1]/self.i_size,
-            width[0]/self.j_value - 1,
-            width[1]/self.i_value - 1)
+            width[0]/self.j_size - 1,
+            width[1]/self.i_size - 1)
     
   
   
