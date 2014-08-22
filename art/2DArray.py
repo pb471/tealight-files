@@ -105,7 +105,7 @@ class Array2D:
 
 #Main
 M = Array2D(2,2)
-M.components_random()
+M.components_randint(-4,4)
 M.print_array()
 a = M.min()
 print a
