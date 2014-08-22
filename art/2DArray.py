@@ -42,6 +42,6 @@ class Array2D:
 #Main
 M = Array2D(4,7,1)
 M.randomize_components(0, 3)
-M.print_matrix
+M.print_matrix()
 p =  M[1,2]
 print p
