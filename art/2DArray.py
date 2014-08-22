@@ -21,7 +21,7 @@ class Array2D:
   
   #Overload indexing
   def __getitem__(self, i):
-    return self.array[i][j]
+    return self.array[i]
   
   #Set the values of the matrix to random integers
   def randomize_components(self, lower_bound, upper_bound):
