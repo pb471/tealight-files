@@ -65,7 +65,7 @@ class Array2D:
     return max_value
   
   #Gets the minimum value of the array
-  def max(self):
+  def min(self):
     max_value = min(self.array)
     max_value = min(max_value)
     return max_value
