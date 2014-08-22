@@ -20,8 +20,8 @@ class Array2D:
     return array
   
   #Overload indexing
-  def __getitem__(self, i, j):
-    return self.array[i][j]
+  def __getitem__(self, index):
+    return self.array[index]
   
     #Overload indexing
   def __setitem__(self, i, j, value):
