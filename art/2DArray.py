@@ -48,3 +48,6 @@ M.randomize_components(0, 3)
 M.print_matrix()
 p =  M[1,2]
 print p
+M[1,2] = 4
+p =  M[1,2]
+print p
