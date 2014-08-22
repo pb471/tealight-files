@@ -73,6 +73,15 @@ class Array2D:
   #Draws the array on-screen as squares; colour indicates value
   #M.draw([30 30], [100 100])
   def draw(self, position = [30, 30], width = [200,200]):
+    
+    #Convert rgba vector to string
+    def coltostr(col):
+      string_out = "rgba("
+      for i in range(0,3):
+        string_out = string_out + str(col[i]) + ","
+      string_out = string_out + str(col[3]) + ")"
+      return string_out
+    
     for i in range(0, self.i_size):
       for j in range(0, self.j_size):
         rgb_value = 255 * self.array[i][j]/self.max()
