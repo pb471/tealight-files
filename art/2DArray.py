@@ -64,7 +64,7 @@ class Array2D:
   
 
 #Main
-M = Array2D(4,4,0)
+M = Array2D(4,4,1)
 M.components_constant(3)
 M.print_array()
 p =  M[1,2]
