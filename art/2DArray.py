@@ -91,8 +91,8 @@ class Array2D:
         #Positive values are red, negative are blue
         #Values close to zero will be darker
         if self.array[i][j] >= 0 :
-          rgb_value = 255 * self.array[i][j]/self.max()
-          rgba_string = coltostr([rgb_value, 0, 0, 1])
+          alpha_value = 1.0 * self.array[i][j]/self.max()
+          rgba_string = coltostr([255, 0, 0, alpha_value])
         else:
           rgb_value = 255 * self.array[i][j]/self.min()
           rgba_string = coltostr([0, 0, rgb_value, 1])
