@@ -147,6 +147,14 @@ M.print_array()
 M.components_random()
 M.print_array()
 
+#Get an element
+val = M[1,1]
+print val
+
+#Set an element
+M[1,1] = 50
+print M[1,1]
+
 #Set its elements to random ints on [-10, 10]
 M.components_randint(-10,10)
 M.print_array()
