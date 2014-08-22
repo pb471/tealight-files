@@ -127,6 +127,7 @@ class Array2D:
             width[1]/self.i_size - 1)
         
         #Draw text
+        color("white")
         text(position[0] + j * width[0]/self.j_size,
             position[1] + i * width[1]/self.i_size,
             "a")
