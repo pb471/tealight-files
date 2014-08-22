@@ -75,7 +75,7 @@ class Array2D:
   def draw(self, position = [30, 30], width = [200,200]):
     for i in range(0, self.i_size):
       for j in range(0, self.j_size):
-        rgb_value = 255 * int(self.array[i][j])/self.max
+        rgb_value = 255 * self.array[i][j]/self.max
         print rgb_value
         color("red")
         box(position[0] + j * width[0]/self.j_size,
