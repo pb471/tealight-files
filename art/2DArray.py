@@ -94,8 +94,8 @@ class Array2D:
           alpha_value = 1.0 * self.array[i][j]/self.max()
           rgba_string = coltostr([255, 0, 0, alpha_value])
         else:
-          rgb_value = 255 * self.array[i][j]/self.min()
-          rgba_string = coltostr([0, 0, rgb_value, 1])
+          alpha_value = 1.0 * self.array[i][j]/self.max()
+          rgba_string = coltostr([0, 0, 255, alpha_value])
         
         #Draw box
         color(rgba_string)
