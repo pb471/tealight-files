@@ -179,7 +179,6 @@ M.draw_debug([30, 550], [200, 200])
 M = Array2D(100,100)
 for i in range(0,100):
   for j in range(0,100):
-    M[i,j] = -100 + i + j
-    
+    M[i,j] = -100 + i + j  
 M.draw([300, 550], [200, 200])
     
