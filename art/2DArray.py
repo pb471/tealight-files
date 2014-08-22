@@ -91,7 +91,7 @@ class Array2D:
         if self.array[i][j] >= 0 :
           rgba_string = coltostr([rgb_value, 0, 0, 1])
         else:
-          rgba_string = coltostr(0, 0, rgb_value, 0)
+          rgba_string = coltostr([0, 0, rgb_value, 0])
         print rgba_string
         
         color(rgba_string)
