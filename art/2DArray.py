@@ -72,7 +72,7 @@ class Array2D:
   
   #Draws the array on-screen as squares; colour indicates value
   #M.draw([30 30], [100 100])
-  def draw(self, position = [30, 30], width = [200,200]):
+  def draw(self, position = [30, 30], size = [200,200]):
     
     #Convert rgba vector to string
     def coltostr(col):
@@ -99,13 +99,13 @@ class Array2D:
         
         #Draw box
         color(rgba_string)
-        box(position[0] + j * width[0]/self.j_size,
-            position[1] + i * width[1]/self.i_size,
+        box(position[0] + j * size[0]/self.j_size,
+            position[1] + i * size[1]/self.i_size,
             width[0]/self.j_size - 1,
             width[1]/self.i_size - 1)
   
   #Draws the array on-screen as squares and prints index and value
-  def draw_debug(self, position = [30, 30], width = [200,200]):
+  def draw_debug(self, position = [30, 30], size = [200,200]):
     for i in range(0, self.i_size):
       for j in range(0, self.j_size):
         #Set rgba value based on max value
@@ -121,15 +121,15 @@ class Array2D:
         
         #Draw box
         color(colour)
-        box(position[0] + j * width[0]/self.j_size,
-            position[1] + i * width[1]/self.i_size,
+        box(position[0] + j * size[0]/self.j_size,
+            position[1] + i * size[1]/self.i_size,
             width[0]/self.j_size - 1,
             width[1]/self.i_size - 1)
         
         #Draw text
         color("white")
-        text(position[0] + j * width[0]/self.j_size,
-            position[1] + i * width[1]/self.i_size,
+        text(position[0] + j * size[0]/self.j_size,
+            position[1] + i * size[1]/self.i_size,
             str(i) + str(j) + " " + str(self.array[i][j]))
   
   
@@ -169,7 +169,7 @@ print [M.min(), M.max(), M.sum()]
 M.draw([30,30], [500,500])
 
 #Draw the matrix on the screen, and write indices and values
-#Make the width (second argument large).
+#Make the size (second argument) large.
 #Doesn't work well if components are floats/large numbers
 M = Array2D(3,3)
 M.components_randint(-5,5)
