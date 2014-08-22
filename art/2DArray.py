@@ -42,8 +42,8 @@ class Array2D:
     sumvalue = 0
     for i in range(0, self.i_size):
       for j in range(0, self.j_size):
-        self.array[i][j] = default_value
-    return array
+        sumvalue += self.array[i][j]
+    return sumvalue
   
   
 
@@ -56,5 +56,5 @@ print p
 M[1,2] = 21
 p =  M[1,2]
 print p
-q = sum(M.array)
+q = M.sum()
 print q
