@@ -39,7 +39,7 @@ class Array2D:
       
   #Sums the array
   def sum(self):
-  sumvalue = 0
+    sumvalue = 0
     for i in range(0, self.i_size):
       for j in range(0, self.j_size):
         self.array[i][j] = default_value
