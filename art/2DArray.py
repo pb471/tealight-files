@@ -21,7 +21,7 @@ class Array2D:
   
   #Overload indexing
   def __getitem__(self, index):
-    return self.array[index]
+    return self.array[index[0]][index[1]]
   
     #Overload indexing
   def __setitem__(self, i, j, value):
