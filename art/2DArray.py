@@ -72,4 +72,4 @@ print p
 q = M.sum()
 print q
 M.components_random()
-M.print_matrix()
+M.print_array()
