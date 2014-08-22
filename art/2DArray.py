@@ -37,4 +37,4 @@ print M.array
 print M.array[3][1]
 M.randomize_components(0, 3)
 print M.array
-M.print_matrix
+M.print_matrix()
