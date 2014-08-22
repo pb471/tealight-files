@@ -25,6 +25,11 @@ class Array2D:
         for j in range(0, self.j_size):
           self.array[i][j] = randint(lower_bound, upper_bound)
   
+  #Neatly prints the matrix
+  def print_matrix(self):
+    for i in range(0, i_size):
+      print self.array[i]
+  
 
 #Main
 M = Array2D(4,7,1)
@@ -32,3 +37,4 @@ print M.array
 print M.array[3][1]
 M.randomize_components(0, 3)
 print M.array
+M.print_matrix
