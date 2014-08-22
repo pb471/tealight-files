@@ -164,7 +164,8 @@ print [M.min(), M.max(), M.sum()]
 
 #Draw the matrix on the screen
 #Positive values are red, negative are blue.
-#Closer to zero is pal
+#Closer to zero is paler
+#Arguments are optional
 M.draw([30,30], [500,500])
 
 #Draw the matrix on the screen, and write indices and values
